@@ -16,7 +16,6 @@ newl: .asciiz "\n" #New line
 
 main:
 
-    add $s0, $t0, $t1
     # Ask for first number
     li $v0, 4 #Prints a string
     la $a0, ask_n1 #define what string to print
