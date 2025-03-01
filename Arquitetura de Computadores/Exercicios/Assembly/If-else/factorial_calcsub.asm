@@ -16,11 +16,11 @@ syscall
 move $t0, $v0  # Armazena número em $t0
 
 # Inicializar variáveis
-li $t1, 1   # Contador so vai até 1
+li $t1, 1   # Limite do contador so vai até 1
 li $t2, 1   # Acumulador do fatorial começa em 1
 
 fact_calc:
-ble $t0, $t1, print_r  # Se contador negativo < 1, termina
+ble $t0, $t1, print_r  # Se contador(negativo) < 1, termina
 
 mul $t2, $t2, $t0  # Multiplica acumulador pelo contador
 addi $t0, $t0, -1  # Decrementa o numero/// Pode tambem se usar sub $t0, $t0, 1 
