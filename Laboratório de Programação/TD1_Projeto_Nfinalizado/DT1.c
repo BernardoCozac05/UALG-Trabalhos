@@ -1,6 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void push(int* stack, int* top, int value) {
+    stack[++(*top)] = value;  // Incrementa top e adiciona o valor
+}
+
+int pop(int* stack, int* top) {
+    return stack[(*top)--];  // Retorna o topo e decrementa
+}
+
+
 // Função auxiliar: maior área retangular no histograma (larguras variáveis)
 int largestRectangleArea(int* widths, int* heights, int n) {
     int *stack = malloc(n * sizeof(int));       // pilha de índices
@@ -28,7 +37,7 @@ int largestRectangleArea(int* widths, int* heights, int n) {
 
         // Aqui mudamos de '>=' para '>' para lidar melhor com casos TSame
         while (top >= 0 && heights[stack[top]] > currHeight) {
-            int h = heights[stack[top--]];
+            int h = heights[pop(stack, &top)];
             int width = (top < 0)
                 ? prefixWidth[i]
                 : prefixWidth[i] - prefixWidth[stack[top] + 1];
@@ -37,7 +46,7 @@ int largestRectangleArea(int* widths, int* heights, int n) {
                 maxArea = area;
             }
         }
-        stack[++top] = i;
+        push(stack, &top, i);
     }
 
     free(stack);
