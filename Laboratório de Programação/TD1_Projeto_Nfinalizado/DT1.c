@@ -1,83 +1,93 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Função para empilhar um elemento: incrementa o índice do topo e armazena o valor na pilha.
 void push(int* stack, int* top, int value) {
-    stack[++(*top)] = value;  // Incrementa top e adiciona o valor
+    stack[++(*top)] = value;
 }
 
+// Função para desempilhar um elemento: retorna o valor no topo e decrementa o índice do topo.
 int pop(int* stack, int* top) {
-    return stack[(*top)--];  // Retorna o topo e decrementa
+    return stack[(*top)--];
 }
 
-
-// Função auxiliar: maior área retangular no histograma (larguras variáveis)
+// Função que calcula a maior área retangular em um histograma com larguras variáveis.
+// Recebe dois arrays (widths e heights) e o número de barras (n).
 int largestRectangleArea(int* widths, int* heights, int n) {
-    int *stack = malloc(n * sizeof(int));       // pilha de índices
-    int *prefixWidth = malloc((n + 1) * sizeof(int)); // soma acumulada das larguras
+    // Aloca memória para a pilha de índices e para o array que guarda a soma acumulada das larguras.
+    int *stack = malloc(n * sizeof(int));
+    int *prefixWidth = malloc((n + 1) * sizeof(int));
 
+    // Verifica se a alocação falhou; em caso afirmativo, libera os recursos e retorna 0.
     if (!stack || !prefixWidth) {
-        // Falha de alocação: liberar e retornar 0 (imprime 0 fora)
+        
         free(stack);
         free(prefixWidth);
         return 0;
     }
 
+    // Inicializa o array prefixWidth com a soma acumulada das larguras.
     prefixWidth[0] = 0;
     for (int i = 0; i < n; i++) {
         prefixWidth[i + 1] = prefixWidth[i] + widths[i];
     }
 
-    int maxArea = 0;
-    int top = -1;
+    int maxArea = 0; // Variável para armazenar a maior área encontrada.
+    int top = -1;   // Inicializa a pilha vazia (índice -1 indica pilha vazia).
 
-    // Passa por todas as caixas + 1 sentinela (i==n => altura=0)
+    // Itera sobre todas as barras e adiciona uma barra sentinela com altura 0 no final para forçar o desempilhamento.
     for (int i = 0; i <= n; i++) {
-        // A altura é 0 quando i == n, forçando desempilhar tudo ao final
+        // Define a altura atual: se for o índice n (sentinela), a altura é 0.
         int currHeight = (i == n) ? 0 : heights[i];
 
-        // Aqui mudamos de '>=' para '>' para lidar melhor com casos TSame
+        // Enquanto houver barras na pilha e a altura da barra no topo for maior que a altura atual,
+        // desempilha e calcula a área potencial com a altura da barra desempilhada.
         while (top >= 0 && heights[stack[top]] > currHeight) {
+            // Retira o índice do topo e obtém a altura correspondente.
             int h = heights[pop(stack, &top)];
+            // Calcula a largura correspondente à barra desempilhada usando o array de prefixos.
             int width = (top < 0)
                 ? prefixWidth[i]
                 : prefixWidth[i] - prefixWidth[stack[top] + 1];
-            int area = h * width;
+            int area = h * width;  // Calcula a área do retângulo.
             if (area > maxArea) {
-                maxArea = area;
+                maxArea = area;  // Atualiza a maior área, se necessário.
             }
         }
+        // Empilha o índice atual para continuar o processamento.
         push(stack, &top, i);
     }
 
+    // Libera a memória alocada e retorna a maior área encontrada.
     free(stack);
     free(prefixWidth);
     return maxArea;
 }
 
 int main(void) {
-    int capacity = 16;
-    int *heights = malloc(capacity * sizeof(int));
-    int *widths  = malloc(capacity * sizeof(int));
+    int capacity = 16; // Capacidade inicial dos arrays que armazenarão as larguras e alturas.
+    int *heights = malloc(capacity * sizeof(int));  // Aloca memória para armazenar as alturas.
+    int *widths  = malloc(capacity * sizeof(int));  // Aloca memória para armazenar as larguras.
+    
+    // Verifica se a alocação inicial foi bem-sucedida; se não, libera os recursos e imprime 0.
     if (!heights || !widths) {
-        // Falha alocando de início => só imprime 0 e sai
+
         free(heights);
         free(widths);
         printf("0\n");
         return 0;
     }
 
-    int n = 0;
-    // Ler do stdin até EOF (sem mensagens de erro)
+    int n = 0;  // Contador para o número de barras lidas.
+    // Loop para ler pares de inteiros (largura e altura) da entrada padrão até que não seja mais possível ler.
     while (1) {
         int w, h;
         if (scanf("%d %d", &w, &h) != 2) {
-            // Se não leu 2 ints, acabou ou leitura inválida => parar
-            break;
+            break;  // Encerra o loop se não for possível ler dois inteiros.
         }
-        // Se quiser ignorar entradas inválidas:
-        // if (w <= 0 || h < 0) continue;
 
-        // Realocar se preciso
+
+        // Se o array estiver cheio, duplica a capacidade e realoca os arrays.
         if (n == capacity) {
             capacity *= 2;
             int *newH = realloc(heights, capacity * sizeof(int));
@@ -91,12 +101,13 @@ int main(void) {
             heights = newH;
             widths  = newW;
         }
+        // Armazena os valores lidos nos arrays correspondentes.
         widths[n]  = w;
         heights[n] = h;
         n++;
     }
 
-    // Se não leu nada, imprime 0
+    // Se nenhum par de valores foi lido, libera a memória e imprime 0.
     if (n == 0) {
         free(heights);
         free(widths);
@@ -104,13 +115,14 @@ int main(void) {
         return 0;
     }
 
-    // Calcular a maior área
+    // Calcula a maior área retangular utilizando a função largestRectangleArea.
     int maxArea = largestRectangleArea(widths, heights, n);
 
-    // Imprimir resultado final
+    // Imprime o resultado final.
     printf("%d\n", maxArea);
 
+    // Libera a memória alocada para os arrays e encerra o programa.
     free(heights);
     free(widths);
-    return 0;  // sucesso
+    return 0;
 }
