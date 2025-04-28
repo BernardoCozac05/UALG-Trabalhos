@@ -44,8 +44,7 @@ static void dynvec_reserve(dynvec *v, size_t need)
     if (!v->data) { perror("realloc dynvec"); exit(EXIT_FAILURE); }
 }
 
-static size_t dynvec_index(dynvec *v, void *elem,
-                           int (*cmp)(const void*, const void*))
+static size_t dynvec_index(dynvec *v, void *elem, int (*cmp)(const void*, const void*))
 {
     size_t i;
     for (i = 0; i < v->length; ++i) {
@@ -56,8 +55,7 @@ static size_t dynvec_index(dynvec *v, void *elem,
     return v->length;
 }
 
-static int dynvec_contains(dynvec *v, void *elem,
-                           int (*cmp)(const void*, const void*))
+static int dynvec_contains(dynvec *v, void *elem, int (*cmp)(const void*, const void*))
 {
     return dynvec_index(v, elem, cmp) != v->length;
 }
@@ -126,8 +124,7 @@ static void insert_or_inc(dynvec *v, char *tok)
     /* encontrar posição em ordem alfabética */
     pos = 0;
     while (pos < v->length &&
-           cmp_alpha(&key, (char*)v->data + pos * sizeof(Word)) > 0)
-        ++pos;
+           cmp_alpha(&key, (char*)v->data + pos * sizeof(Word)) > 0) ++pos;
 
     dynvec_reserve(v, v->length + 1);
     memmove((char*)v->data + (pos + 1) * sizeof(Word),
