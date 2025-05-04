@@ -441,8 +441,7 @@ int main(void) {
     for (size_t i = 0; i < output_limit; i++) {
         WordCount *current_entry = dynamic_vector_get(word_counts, i);
         if (current_entry && current_entry->word_string) {
-             printf("%4d %s", current_entry->occurrences, current_entry->word_string);
-             if (i < output_limit - 1) { printf("\n"); }
+             printf("%4d %s\n", current_entry->occurrences, current_entry->word_string);
              output_was_generated = 1;
         }
         /* Libera a string da palavra após a impressão */
