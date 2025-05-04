@@ -92,7 +92,8 @@ static void* dynamic_vector_get(const DynamicVector *vector, size_t index) {
 
 /*
  * Adiciona um elemento ao final do vetor dinâmico.
- * Se necessário, realoca o buffer de dados (duplicando a capacidade) para acomodar o novo elemento.
+ * Se necessário, realoca o buffer de dados (duplicando a capacidade)
+ * para acomodar o novo elemento.
  * Termina o programa se a alocação/realocação falhar.
  */
 static void dynamic_vector_push(DynamicVector *vector, const void *element) {
@@ -251,10 +252,10 @@ static void append_char_to_buffer(char *buffer, int *current_length_ptr, size_t 
          exit(EXIT_FAILURE);
     }
     if (char_byte_size == 1) {
-        buffer[(*current_length_ptr)++] = tolower(first_byte);
+        buffer[(*current_length_ptr)++] = first_byte;
     } else {
         buffer[(*current_length_ptr)++] = first_byte;
-        buffer[(*current_length_ptr)++] = (second_byte >= 0x80 && second_byte <= 0x9E) ? second_byte + 0x20 : second_byte;
+        buffer[(*current_length_ptr)++] = second_byte;
     }
 }
 
@@ -278,7 +279,7 @@ static int compare_word_counts(const void *ptr_a, const void *ptr_b) {
     if (word_count_a->occurrences != word_count_b->occurrences) {
         return (word_count_b->occurrences > word_count_a->occurrences) - (word_count_b->occurrences < word_count_a->occurrences);
     }
-    return strcmp(word_count_a->word_string, word_count_b->word_string);
+    return strcoll(word_count_a->word_string, word_count_b->word_string);
 }
 
 /*
@@ -458,7 +459,7 @@ int main(void) {
     dynamic_vector_free(word_counts);
     word_counts = NULL;
 
-    /* Verifica erros na escrita para stdout*/
+    /* Verifica erros na escrita para stdout */
     if (ferror(stdout)) {
         perror("main: error writing to stdout");
         return EXIT_FAILURE;
