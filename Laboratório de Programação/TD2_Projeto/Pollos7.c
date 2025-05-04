@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <locale.h>        /* for setlocale() */
+#include <locale.h>
 
 /* Check if a character is an alphabetic letter (A-Z, a-z, or accented letters from À to ÿ in ISO-8859-1). */
 int is_letter(int c) {
