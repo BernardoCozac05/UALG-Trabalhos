@@ -35,3 +35,4 @@ Pollos_commented.c - Codigo totalmente funcional utilizando o segundo script, se
 Pollos1nl.c - Codigo totalmente funcional utilizando o segundo script, com new line no final
 Pollos2nl.c - Codigo totalmente funcional utilizando o segundo script, com 2 new line no final
 Pollos1s.c - Codigo totalmente funcional utilizando o primeiro script, sem new line no final 
+Pollos(old).c - Uma versão antiga, provavelmente não funcional a 100%, mas chega perto
