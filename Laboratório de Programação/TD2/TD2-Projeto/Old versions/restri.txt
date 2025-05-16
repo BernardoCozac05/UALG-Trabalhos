@@ -1,0 +1,75 @@
+Podemos enfim responder à custa de um script de uma só linha:
+
+cat padre_amaro.txt | tr -cs '[:alpha:]À-ÿ' '[\n*]'| sort | uniq -c | sort -rn
+Explicação :  
+
+Passar o conteúdo do ficheiro padre_amaro.txt para a saída stantard
+
+cat padre_amaro.txt
+
+Substituir os caracteres não alfabéticos (nos quais incluímos os caracteres acentuados)  por um fim de linha
+
+| tr -cs '[:alpha:]À-ÿ' '[\n*]'
+
+Ordenar todas as linhas por ordem alfabética  
+
+| sort
+
+Agrupar todas as linhas idênticas pedindo contagem (opção -c)
+
+| uniq -c
+
+Ordenar numericamente (opção -n) na ordem inversa (opção -r)
+
+| sort -rn
+
+Assim, com o primeiro script, as 30 palavras mais usadas na obra "Padre Amaro":
+
+5623 a
+4937 o
+3864 de
+3711 que
+2841 e
+2336 se
+1957 da
+1936 com
+1859 um
+1747 do
+1549 uma
+1383 lhe
+1348 os
+1301 d
+1215 não
+1135 as
+1109 para
+ 955 E
+ 919 na
+ 872 em
+ 826 ao
+ 756 é
+ 739 Amaro
+ 722 á
+ 722 no
+ 708 O
+ 636 como
+ 631 sua
+ 603 n
+ 577 senhor
+Claro, podemos refinar este exemplo, retirando por exemplo os artigos da listagem. De realçar: usamos para este exemplo duas fases de ordenação. 
+
+De notar que só a posição 
+ tem informação relevante para o nosso propósito, sendo as restantes palavras do ranking relativamente anónimas. De reparar também a influência do português antigo aqui reportado (por exemplo na posição 14 temos o d, que denota o "d apóstrofe" ) .^
+
+ Objectivo
+Escreva um programa C que lê  um inteiro 
+  numa primeira linha. Este inteiro representa o número de palavras por considerar no ranking. A obra por analisar está nas linhas seguintes.  A obra é dada no standard input linha por linha até chegar ao fim de ficheiro (EOF). 
+
+Este programa deve apresentar o ranking das 
+ palavras mais utilizadas na obra lida, no formato apresentado acima. 
+
+o p
+
+Em que p é a palavra e  o é o seu número de ocorrências na obra lida.
+
+Critérios e restrições
+Deverá necessariamente usar duas funções de ordenação diferentes para a resolução deste problema. Obviamente, espera-se que utilize o código que foi desenvolvido nesta ficha em exercícios anteriores.
