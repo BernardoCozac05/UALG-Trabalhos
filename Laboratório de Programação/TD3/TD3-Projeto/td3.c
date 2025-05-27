@@ -3,8 +3,8 @@
 #include <string.h>
 #include <ctype.h>
 
-#define MAXTXT      4096
-#define MAXCHOICE     10
+#define MAXTXT 4096
+#define MAXCHOICE 10
 
 typedef enum { NORMAL, WON, FAILED } TipoCena;
 
@@ -48,7 +48,7 @@ Cena *criaCena(int id, const char *desc, TipoCena tipo, int nOpcoes) {
     }
     for (int i = 0; i < MAXCHOICE; ++i) {
         c->opcoesTexto[i] = NULL;
-        c->escolhas[i]    = -1;
+        c->escolhas[i] = -1;
     }
     return c;
 }
@@ -57,7 +57,7 @@ Cena *criaCena(int id, const char *desc, TipoCena tipo, int nOpcoes) {
 No *criaNo(Cena *cena, int nVizinhos) {
     No *no = malloc(sizeof(No));
     if (!no) return NULL;
-    no->cena     = cena;
+    no->cena = cena;
     no->nVizinhos = nVizinhos;
     if (nVizinhos > 0) {
         no->vizinhos = malloc(nVizinhos * sizeof(No *));
@@ -84,7 +84,7 @@ void libertaCena(Cena *c) {
     if (!c) return;
     free(c->descricao);
     for (int i = 0; i < c->nOpcoes; ++i)
-        free(c->opcoesTexto[i]);
+    free(c->opcoesTexto[i]);
     free(c);
 }
 
@@ -118,7 +118,7 @@ int main(void) {
                 char *p = line + 1, buf[32]; int bi = 0;
                 while (*p && *p != ']' && bi < (int)sizeof(buf)-1) {
                     if (isdigit((unsigned char)*p))
-                        buf[bi++] = *p;
+                    buf[bi++] = *p;
                     p++;
                 }
                 buf[bi] = '\0';
@@ -127,7 +127,7 @@ int main(void) {
             }
         }
         if (sceneId < 0 || sceneId >= nCenas)
-            sceneId = i;
+        sceneId = i;
 
         // lê linha "<<<"
         while (fgets(line, sizeof(line), stdin))
@@ -152,9 +152,9 @@ int main(void) {
                     if (!isdigit((unsigned char)tag[k])) { allDigits = 0; break; }
                 if (allDigits) {
                     tipo = NORMAL;
-                    nOp  = atoi(tag);
+                    nOp = atoi(tag);
                 } else if (strcmp(tag, "WON") == 0) {
-                    tipo = WON;   nOp = 0;
+                    tipo = WON; nOp = 0;
                 } else if (strcmp(tag, "FAILED") == 0) {
                     tipo = FAILED; nOp = 0;
                 }
@@ -171,7 +171,7 @@ int main(void) {
         // cria cena e nó
         Cena *c = criaCena(sceneId, descBuf, tipo, nOp);
         free(descBuf);
-        No   *no = criaNo(c, nOp);
+        No *no = criaNo(c, nOp);
         nodes[sceneId] = no;
 
         // lê exatamente nOp opções, pulando quaisquer linhas que não comecem com '+'
@@ -186,7 +186,7 @@ int main(void) {
             while (*p && !isdigit((unsigned char)*p)) p++;
             char numbuf[16]; int bi = 0;
             while (*p && isdigit((unsigned char)*p) && bi < (int)sizeof(numbuf)-1)
-                numbuf[bi++] = *p++;
+            numbuf[bi++] = *p++;
             numbuf[bi] = '\0';
             int dest = atoi(numbuf);
 
@@ -201,7 +201,7 @@ int main(void) {
             char *optTxt = malloc(tlen + 1);
             strcpy(optTxt, p);
 
-            c->escolhas[parsed]    = dest;
+            c->escolhas[parsed] = dest;
             c->opcoesTexto[parsed] = optTxt;
             parsed++;
         }
@@ -222,7 +222,7 @@ int main(void) {
     int outcome = 0;  // 1=WON, 2=FAILED, 3=WAITING
 
     // checa se cena inicial já é final
-    if (hist->ativo->cena->tipo == WON)   outcome = 1;
+    if (hist->ativo->cena->tipo == WON) outcome = 1;
     if (hist->ativo->cena->tipo == FAILED) outcome = 2;
 
     int escolha;
@@ -243,21 +243,21 @@ int main(void) {
             break;
         }
         hist->ativo = next;
-        if (next->cena->tipo == WON)   { outcome = 1; break; }
+        if (next->cena->tipo == WON) { outcome = 1; break; }
         if (next->cena->tipo == FAILED) { outcome = 2; break; }
     }
 
     if (outcome == 0)
-        outcome = 3;  // sem escolhas suficientes → WAITING
+    outcome = 3;  // sem escolhas suficientes → WAITING
 
     // imprime apenas o resultado final
-    if (outcome == 1)       printf("WON\n");
-    else if (outcome == 2)  printf("FAILED\n");
-    else                    printf("WAITING\n");
+    if (outcome == 1) printf("WON\n");
+    else if (outcome == 2) printf("FAILED\n");
+    else printf("WAITING\n");
 
     // liberta memória
     for (int i = 0; i < nCenas; ++i)
-        libertaNo(nodes[i]);
+    libertaNo(nodes[i]);
     free(nodes);
     free(hist);
     return 0;
