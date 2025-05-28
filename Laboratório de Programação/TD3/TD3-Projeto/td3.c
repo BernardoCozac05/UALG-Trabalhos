@@ -101,6 +101,29 @@ void libertaCena(Cena *c) {
     free(c);
 }
 
+// Mostra as cenas escolhidas
+
+void mostrarCena(Cena *c) {
+    if (!c) return;
+
+    // Imprime a descrição da cena
+    if (c->descricao) {
+        printf("%s\n", c->descricao);
+    }
+
+    // Se for uma cena do tipo NORMAL, imprime as opções no formato pedido
+    if (c->tipo == NORMAL) {
+        for (int i = 0; i < c->nOpcoes; ++i) {
+            int destino = c->escolhas[i];
+            char *texto = c->opcoesTexto[i];
+            if (texto) {
+                printf("+ %d. %s\n", destino, texto);
+            }
+        }
+    }
+}
+
+
 /* Liberta toda a memória de um nó (não recursivo) */
 void libertaNo(No *no) {
     if (!no) return;
@@ -363,6 +386,12 @@ int simulaHistoria(Historia *hist) {
         outcome = 2;
     }
     int escolha;
+
+    // Mostra a cena inicial
+    //mostraCenaNo(hist->ativo);
+    //mostrarCena(hist->ativo->cena);
+    //RETIRAR COMENTARIO APENAS PARA MOSTRAR A CENA
+
     // Processa as escolhas enquanto não houver desfecho e houver input disponível
     while (outcome == 0 && scanf("%d", &escolha) == 1) {
         // Se a cena atual já for final, interrompe (ignora entradas extra)
@@ -378,6 +407,12 @@ int simulaHistoria(Historia *hist) {
         }
         // Avança para o próximo nó (cena escolhida)
         hist->ativo = next;
+
+        // Mostra a nova cena após mudar de nó
+        //mostraCenaNo(hist->ativo);
+        //mostrarCena(hist->ativo->cena);
+        //RETIRAR COMENTARIO APENAS PARA MOSTRAR A CENA
+
         // Verifica se a nova cena é um fim de jogo (WON ou FAILED)
         if (estadoCenaNo(hist->ativo) == WON) {
             outcome = 1;
