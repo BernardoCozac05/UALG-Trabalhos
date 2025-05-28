@@ -152,6 +152,28 @@ void libertaCena(Cena *c) {
     free(c);
 }
 
+// Mostra as cenas escolhidas
+
+void mostrarCena(Cena *c) {
+    if (!c) return;
+
+    // Imprime a descrição da cena
+    if (c->descricao) {
+        printf("%s\n", c->descricao);
+    }
+
+    // Se for uma cena do tipo NORMAL, imprime as opções no formato pedido
+    if (c->tipo == NORMAL) {
+        for (int i = 0; i < c->nOpcoes; ++i) {
+            int destino = c->escolhas[i];
+            char *texto = c->opcoesTexto[i];
+            if (texto) {
+                printf("+ %d. %s\n", destino, texto);
+            }
+        }
+    }
+}
+
 // Função: libertaNo
 // Libera um No do grafo, chamando libertaCena e liberando o array de vizinhos
 // no: ponteiro para No a ser liberado
@@ -438,6 +460,12 @@ int simulaHistoria(Historia *hist) {
     else if (estadoCenaNo(hist->ativo) == FAILED) outcome = 2;
 
     int escolha;
+
+    // Mostra a cena inicial
+    //mostraCenaNo(hist->ativo);
+    //mostrarCena(hist->ativo->cena);
+    //RETIRAR COMENTARIO APENAS PARA MOSTRAR A CENA
+
     // Processa escolhas enquanto não houver desfecho
     while (outcome == 0 && scanf("%d", &escolha) == 1) {
         if (estadoCenaNo(hist->ativo) != NORMAL) break;
@@ -447,6 +475,12 @@ int simulaHistoria(Historia *hist) {
             break;
         }
         hist->ativo = next;
+
+        // Mostra a nova cena após mudar de nó
+        //mostraCenaNo(hist->ativo);
+        //mostrarCena(hist->ativo->cena);
+        //RETIRAR COMENTARIO APENAS PARA MOSTRAR A CENA
+
         if (estadoCenaNo(hist->ativo) == WON) { outcome = 1; break; }
         if (estadoCenaNo(hist->ativo) == FAILED) { outcome = 2; break; }
     }
