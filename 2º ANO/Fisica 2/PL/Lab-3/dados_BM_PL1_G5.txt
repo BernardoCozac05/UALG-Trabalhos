@@ -1,0 +1,49 @@
+Erro de leitura da balança: 0.01 g
+Erro de leitura do termometro: 0.5 GC
+
+Peso do calorimetro: 17,73 +/- 0.01 g
+Peso do Calorimetro com agua: 151.87 +/- 0.01 g
+Peso do bloco de latao: 60.32 +/- 0.01 g
+Peso do bloco de aluminio: 60.42 +/- 0.01 g
+
+Temperatura ambiente: 24 +/- 0.5 GC
+
+Temperatura da agua fria: 1  +/- 0.5 GC
+Temperatura da Agua quente: 97 +/- 0.5 GC - 1 medição latão
+Temperatura da Agua quente: 96 +/- 0.5 GC - 2º medição latão
+
+
+Temperatura da Agua quente: 97 +/- 0.5 GC - 1 medição alumínio
+Temperatura da Agua quente: 96 +/- 0.5 GC - 2 medição alumínio
+
+Temperatura do latão em equilibrio na agua fria: 6 +/- 0.5 GC - 1ºMedicao
+Temperatura do alumínio na água fria: 10 +/- 0.5 GC - 1ºMedicao Aluminuo
+Temperatura do latão em equilibrio na agua fria: 6 +/- 0.5 GC - 2ºMedicao
+Temperatura do alumínio na água fria: 10 +/- 0.5 GC - 2ºMedicao Aluminuo
+
+ambiente quente fria equilibrio
+
+ objeto mediçao1 med2
+
+-----------------------------------------------------------------------------------
+
+Erro de leitura da escala do tubo (δVL): 0.5 cl
+Erro de leitura do termometro (δTL):0.5 GC
+Erro de leitura da escala do manometro (δpL): 0.0025x10^5 Pa
+
+Temp ambiente: 24 +/- 0.5 GC
+
+Valor maximo P: 2.95x10^5 Pa
+Valor maximo V: 244 cl
+
+Presao 247 cl volume: 2.90x10^5 Pa
+Presao 250 cl volume: 2.85x10^5 Pa
+Presao 253 cl volume: 2.80x10^5 Pa
+Presao 256 cl volume: 2.775x10^5 Pa
+Presao 259 cl volume: 2.75x10^5 Pa
+Presao 262 cl volume: 2.725x10^5 Pa
+Presao 265 cl volume: 2.70x10^5 Pa
+Presao 268 cl volume: 2.65x10^5 Pa
+Presao 271 cl volume: 2.625x10^5 Pa
+Presao 274 cl volume: 2.60x10^5 Pa
+

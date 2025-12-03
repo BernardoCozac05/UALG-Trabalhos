@@ -1,0 +1,16 @@
+1
+4
+7
+RESET
+1
+3
+LOAD unknown.sav
+SAVE tree.sav
+LOAD tree.sav
+5
+15
+LOAD tree.sav
+5
+14
+SAVE tree.sav
+19

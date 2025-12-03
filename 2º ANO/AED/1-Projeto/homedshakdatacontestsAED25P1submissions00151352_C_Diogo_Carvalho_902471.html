@@ -1,0 +1,250 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Report of submission 00151352_C_Diogo_Carvalho_90247</title>
+<link
+rel	="stylesheet"
+href	="../../styles/base.css"
+type	="text/css">
+</head>
+<body>
+<h2>Report #1</h2>
+
+<table>
+<tr>
+<th>Submission</th>
+<td>
+<a href="?inspect+data/contests/AED25P1/submissions/00151352_C_Diogo_Carvalho_90247">00151352_C_Diogo_Carvalho_90247</a>
+</td>
+</tr>
+<tr>
+<th>File</th>
+<td>
+<a href="?inspect+data/contests/AED25P1/submissions/00151352_C_Diogo_Carvalho_90247/Scene.java">Scene.java</a>
+<a href="data/contests/AED25P1/submissions/00151352_C_Diogo_Carvalho_90247/Scene.java">[Download]</a>
+</td>
+
+<tr><th>Received</td>	<td>Tue Sep 23 11:30:06 +0100 2025</td></tr>
+<tr><th>Analyzed</td>	<td>Tue Sep 23 11:30:06 +0100 2025 (0:00:00)</td></tr><tr>
+<th>Team</th>
+<td>
+<a href="?inspect+data/contests/AED25P1/groups/students/Diogo_Carvalho_90247">
+Diogo_Carvalho_90247
+</a> Login: <code>Diogo_Carvalho_90247</code> Group: students [students]
+</td><tr>
+<th>Language</th>
+<td>
+<a href="?inspect+data/contests/AED25P1/languages/Java">
+Java
+</a>
+</td><tr>
+<th>Problem</th>
+<td>
+<a href="?inspect+data/contests/AED25P1/problems/C">
+C: Story
+</a>
+</td><tr>
+<th>Compilation</th>
+<td>src/Story.java:5: error: class Scene is public, should be declared in a file named Scene.java
+public class Scene {
+       ^
+src/StoryTest.java:38: error: cannot access Story
+    private static void testIllegalArgumentException(Supplier<Story> supplier)
+                                                              ^
+  bad source file: src/Story.java
+    file does not contain class Story
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+src/StoryTest.java:62: error: cannot access Story
+        Story s = new Story("Title", nodes);
+        ^
+  bad source file: src/Story.java
+    file does not contain class Story
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+3 errors</td>
+</tr>
+</table><table>
+<tr>	<th>CPU	  </th><td>0 (0) sec</td>	</tr>
+<tr>	<th>Memory	  </th><td>0 kbytes</td>			</tr>
+<tr>	<th>Classification</th><td>Compile Time Error</td>		</tr>
+<tr>	<th>Mark</th>	  <td>0</td>		</tr>
+<tr>
+<th valign="top">Observations</th>
+<td><pre></pre></td>
+</tr>
+<tr>
+<th valign="top">Feedback</th>
+<td><pre></pre></td>
+</tr>
+
+<tr>
+<th>Code</th>
+<td></td>
+</table>
+<pre>
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class Scene {
+    /** Tipos de cena. */
+    public enum Type { NORMAL, WON, FAILED }
+
+    private final int id;
+    private final String description;
+    private final Type type;
+    private final ArrayList&lt;Option&gt; options;
+
+    /**
+     * Construtor.
+     */
+    public Scene(int id, String description, Type type) {
+        if (id &lt; 0 || description == null || description.isEmpty() || type == null) {
+            throw new IllegalArgumentException("Invalid Scene arguments");
+        }
+        this.id = id;
+        this.description = description;
+        this.type = type;
+        this.options = new ArrayList&lt;&gt;();
+    }
+
+    /** Adiciona opção, não permite ids repetidos. */
+    public boolean addOption(Option o) {
+        if (o == null) throw new IllegalArgumentException("Null option");
+        for (Option ex : options) {
+            if (ex.getId() == o.getId()) return false;
+        }
+        options.add(o);
+        return true;
+    }
+
+    public int getId() { return id; }
+    public Type getType() { return type; }
+    public String getDescription() { return description; }
+    public Iterable&lt;Option&gt; getOptions() { return options; }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("[").append(id).append("]\n");
+        sb.append(description).append("\n");
+        if (type == Type.WON) {
+            sb.append("&lt;WON&gt;");
+        } else if (type == Type.FAILED) {
+            sb.append("&lt;FAILED&gt;");
+        } else {
+            for (int i = 0; i &lt; options.size(); i++) {
+                sb.append(options.get(i).toString());
+                if (i &lt; options.size() - 1) sb.append("\n");
+            }
+        }
+        return sb.toString();
+    }
+
+    /**
+     * Lê uma cena do BufferedReader (não fecha o reader).
+     * Formatos aceites:
+     * [&lt;id&gt;]
+     * &lt;&lt;&lt;
+     * &lt;descrição (várias linhas)&gt;
+     * &gt;&gt;&gt;                (NORMAL)
+     * &gt;&gt;&gt; &lt;n&gt; ou &gt;&gt;&gt;&lt;n&gt;  (NORMAL; n ignorado aqui)
+     * ***                (início opções)
+     * &lt;opção 1&gt;
+     * ...
+     * ***                (fim opções)
+     *
+     * ou finais:
+     * &gt;&gt;&gt;WON / &gt;&gt;&gt; WON / &gt;&gt;&gt;&lt;WON&gt;
+     * &gt;&gt;&gt;FAILED / &gt;&gt;&gt; FAILED / &gt;&gt;&gt;&lt;FAILED&gt;
+     */
+    public static Scene parseScene(BufferedReader br) throws IOException, NumberFormatException {
+        // [&lt;id&gt;]
+        String line = br.readLine();
+        if (line == null) throw new IOException("Missing scene id line");
+        String idLine = line.trim();
+        if (!idLine.startsWith("[") || !idLine.endsWith("]") || idLine.length() &lt; 2) {
+            throw new NumberFormatException("Invalid scene id format");
+        }
+        int sceneId = Integer.parseInt(idLine.substring(1, idLine.length() - 1).trim());
+
+        // &lt;&lt;&lt;  (permitir espaços)
+        line = br.readLine();
+        if (line == null) throw new IOException("Missing &lt;&lt;&lt; marker");
+        if (!line.trim().equals("&lt;&lt;&lt;")) throw new IOException("Expected '&lt;&lt;&lt;'");
+
+        // Descrição até um marcador que comece por "&gt;&gt;&gt;"
+        StringBuilder desc = new StringBuilder();
+        Type sceneType = null;
+        while (true) {
+            line = br.readLine();
+            if (line == null) throw new IOException("Unterminated description");
+            String trimmed = line.trim();
+            if (trimmed.startsWith("&gt;&gt;&gt;")) {
+                // Sufixo após "&gt;&gt;&gt;"
+                String suffix = trimmed.substring(3).trim();
+
+                // Se vier entre ângulos, remover &lt;...&gt;
+                if (suffix.startsWith("&lt;") &amp;&amp; suffix.endsWith("&gt;") &amp;&amp; suffix.length() &gt;= 2) {
+                    suffix = suffix.substring(1, suffix.length() - 1).trim();
+                }
+
+                if (suffix.isEmpty()) {
+                    sceneType = Type.NORMAL;
+                } else {
+                    String up = suffix.toUpperCase();
+                    if (up.equals("WON")) {
+                        sceneType = Type.WON;
+                    } else if (up.equals("FAILED")) {
+                        sceneType = Type.FAILED;
+                    } else {
+                        // Se for um número (ex: &gt;&gt;&gt;&lt;2&gt; ou &gt;&gt;&gt; 3), tratar como NORMAL
+                        boolean allDigits = true;
+                        for (int i = 0; i &lt; suffix.length(); i++) {
+                            if (!Character.isDigit(suffix.charAt(i))) { allDigits = false; break; }
+                        }
+                        if (allDigits) {
+                            sceneType = Type.NORMAL; // número de opções é irrelevante no B
+                        } else {
+                            throw new IOException("Invalid end-of-description marker: " + line);
+                        }
+                    }
+                }
+                break; // fim da descrição
+            } else {
+                // preservar linha tal como está
+                desc.append(line).append("\n");
+            }
+        }
+
+        // remover último '\n' extra
+        if (desc.length() &gt; 0 &amp;&amp; desc.charAt(desc.length() - 1) == '\n') {
+            desc.deleteCharAt(desc.length() - 1);
+        }
+
+        Scene scene = new Scene(sceneId, desc.toString(), sceneType);
+
+        // Para NORMAL, ler bloco de opções entre *** ... ***
+        if (sceneType == Type.NORMAL) {
+            // *** (início)
+            line = br.readLine();
+            if (line == null) throw new IOException("Missing options start marker");
+            if (!line.trim().equals("***")) throw new IOException("Expected '***' (start options)");
+
+            // opções até *** (fim)
+            while (true) {
+                line = br.readLine();
+                if (line == null) throw new IOException("Missing options end marker");
+                String trimmed = line.trim();
+                if (trimmed.equals("***")) break;
+                // cada linha é uma opção no formato "+ &lt;id&gt;. &lt;descrição&gt;"
+                scene.addOption(Option.parseOption(line)); // pode lançar NumberFormatException
+            }
+        }
+
+        return scene;
+    }
+}
+
+</pre>
+
+</body>

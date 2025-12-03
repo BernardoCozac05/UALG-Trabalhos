@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniCasa - Alojamento UALG</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- CSS VARIABLES & RESET --- */
+        :root {
+            --primary-color: #0056b3; /* Azul UALG inspired */
+            --secondary-color: #00a8cc;
+            --accent-color: #ffbf00;
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --bg-light: #f8fafc;
+            --white: #ffffff;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --radius: 12px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        
+        body { background-color: var(--bg-light); color: var(--text-dark); line-height: 1.6; }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        ul { list-style: none; }
+
+        /* --- HEADER --- */
+        header {
+            background: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+        }
+
+        .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary-color); display: flex; align-items: center; gap: 0.5rem; }
+        .logo span { color: var(--secondary-color); }
+
+        .nav-links { display: flex; gap: 2rem; font-weight: 500; }
+        .nav-links a:hover { color: var(--primary-color); }
+
+        .btn-cta {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 0.6rem 1.2rem;
+            border-radius: var(--radius);
+            font-weight: 600;
+        }
+        .btn-cta:hover { background-color: #004494; }
+        .btn-outline {
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius);
+            font-weight: 600;
+            margin-left: 1rem;
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            background: linear-gradient(rgba(0, 86, 179, 0.8), rgba(0, 168, 204, 0.8)), url('https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            padding: 0 1rem;
+        }
+
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; font-weight: 800; }
+        .hero p { font-size: 1.2rem; margin-bottom: 2rem; max-width: 600px; }
+
+        /* --- SEARCH BOX --- */
+        .search-box {
+            background: var(--white);
+            padding: 1rem;
+            border-radius: 50px;
+            display: flex;
+            gap: 0.5rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            width: 100%;
+            max-width: 800px;
+            flex-wrap: wrap;
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 0.8rem 1.5rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 30px;
+            outline: none;
+            font-size: 1rem;
+        }
+        
+        .search-btn {
+            background-color: var(--accent-color);
+            color: var(--text-dark);
+            border: none;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .search-btn:hover { transform: scale(1.05); }
+
+        /* --- LISTINGS --- */
+        .container { max-width: 1200px; margin: 4rem auto; padding: 0 2rem; }
+        
+        .section-title { font-size: 2rem; margin-bottom: 2rem; color: var(--text-dark); }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .card:hover { transform: translateY(-5px); }
+
+        .card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            position: relative;
+        }
+
+        .verified-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #22c55e;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .card-content { padding: 1.5rem; }
+        .price { font-size: 1.5rem; font-weight: 700; color: var(--primary-color); }
+        .price span { font-size: 0.9rem; color: var(--text-light); font-weight: 400; }
+        
+        .card-title { margin: 0.5rem 0; font-weight: 600; font-size: 1.1rem; }
+        
+        .features { display: flex; gap: 1rem; margin-top: 1rem; color: var(--text-light); font-size: 0.9rem; }
+        .features div { display: flex; align-items: center; gap: 5px; }
+
+        /* --- FOOTER --- */
+        footer {
+            background: var(--text-dark);
+            color: var(--white);
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .footer-col h4 { margin-bottom: 1rem; color: var(--accent-color); }
+        .footer-col ul li { margin-bottom: 0.5rem; color: #94a3b8; }
+        
+        .credits {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #334155;
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+
+        /* Mobile adjustment */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .nav-links { display: none; } /* Simplificado para o esboço */
+            .search-box { flex-direction: column; border-radius: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Uni<span>Casa</span></div>
+            <div class="nav-links">
+                <a href="#">Início</a>
+                <a href="#">Procurar</a>
+                <a href="#">Como Funciona</a>
+            </div>
+            <div>
+                <a href="#" class="btn-cta">Sou Senhorio</a>
+                <a href="#" class="btn-outline">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Alojamento para Estudantes da UALG</h1>
+        <p>A forma mais segura e rápida de encontrar o teu quarto em Faro, Gambelas ou Penha.</p>
+        
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Localização (ex: Penha, Montenegro...)" id="locationInput">
+            <select class="search-input">
+                <option value="">Tipo de Quarto</option>
+                <option value="individual">Individual</option>
+                <option value="partilhado">Partilhado</option>
+                <option value="suite">Suite</option>
+            </select>
+            <button class="search-btn" onclick="filtrarResultados()">Procurar</button>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">Destaques em Faro</h2>
+        <div class="grid" id="listingsGrid">
+            </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>UniCasa</h3>
+                <p style="color: #94a3b8; margin-top: 10px;">Plataforma estratégica para alojamento estudantil.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Links Úteis</h4>
+                <ul>
+                    <li>Sobre Nós</li>
+                    <li>Termos e Condições</li>
+                    <li>Política de Privacidade (RGPD)</li>
+                    <li>Ajuda</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contactos</h4>
+                <ul>
+                    <li>suporte@unicasa.pt</li>
+                    <li>Universidade do Algarve</li>
+                    <li>Campus da Penha, Faro</li>
+                </ul>
+            </div>
+        </div>
+        <div class="credits">
+            <p>© 2025/2026 UniCasa. Projeto de Engenharia Informática - UALG.</p>
+            <p>Desenvolvido por: Diogo Carvalho, Diogo Estriga, Diogo Freitas.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Dados simulados (Mock Data) - Simula a resposta de uma API/Base de Dados
+        const rooms = [
+            {
+                id: 1,
+                title: "Quarto Individual perto da Penha",
+                location: "Faro (Centro)",
+                price: 350,
+                image: "https://images.unsplash.com/photo-1522771753033-6a14791adef9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                type: "Individual",
+                verified: true
+            },
+            {
+                id: 2,
+                title: "Suite Moderna em Montenegro",
+                location: "Montenegro (Perto das Gambelas)",
+                price: 450,
+                image: "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                type: "Suite",
+                verified: true
+            },
+            {
+                id: 3,
+                title: "Quarto Duplo Económico",
+                location: "Faro (Baixa)",
+                price: 250,
+                image: "https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                type: "Partilhado",
+                verified: false
+            }
+        ];
+
+        const listingsGrid = document.getElementById('listingsGrid');
+
+        // Função para gerar o HTML dos cartões
+        function renderListings(data) {
+            listingsGrid.innerHTML = ''; // Limpar
+            data.forEach(room => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.innerHTML = `
+                    <div class="card-img">
+                        <img src="${room.image}" alt="${room.title}" style="width:100%; height:100%; object-fit:cover;">
+                        ${room.verified ? '<div class="verified-badge">✓ Verificado</div>' : ''}
+                    </div>
+                    <div class="card-content">
+                        <div class="price">${room.price}€ <span>/mês</span></div>
+                        <h3 class="card-title">${room.title}</h3>
+                        <p style="color:#64748b; font-size:0.9rem;">📍 ${room.location}</p>
+                        <div class="features">
+                            <div>🛏️ ${room.type}</div>
+                            <div>📡 WiFi</div>
+                            <div>🧾 Contas Incl.</div>
+                        </div>
+                    </div>
+                `;
+                listingsGrid.appendChild(card);
+            });
+        }
+
+        // Inicializar com todos os dados
+        renderListings(rooms);
+
+        // Função de pesquisa simples (Demo)
+        function filtrarResultados() {
+            const input = document.getElementById('locationInput').value.toLowerCase();
+            
+            if(input === "") {
+                renderListings(rooms);
+                return;
+            }
+
+            const filtered = rooms.filter(room => 
+                room.location.toLowerCase().includes(input) || 
+                room.title.toLowerCase().includes(input)
+            );
+
+            if(filtered.length === 0) {
+                listingsGrid.innerHTML = '<p style="grid-column: 1/-1; text-align:center; color:#64748b;">Nenhum alojamento encontrado nessa zona.</p>';
+            } else {
+                renderListings(filtered);
+            }
+        }
+    </script>
+</body>
+</html>

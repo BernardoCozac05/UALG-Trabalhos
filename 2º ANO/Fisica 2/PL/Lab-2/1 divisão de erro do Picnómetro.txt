@@ -1,0 +1,32 @@
+1 divisão de erro do Picnómetro
+
+0,01 g erro balança
+
+Temp ambiente: 24 c
+
+Peso do Picnometro vazio: 47.59 +/- 0.01
+Peso do Picnometro cheio no 0: 100.44 +/- 0.01 100.44
+Peso do Picnometro cheio no 1: 100.51 +/- 0.01 100.51
+Peso do Picnometro cheio no 2: 100.61 +/- 0.01 100.61
+Peso do Picnometro cheio no 3: 100.70 +/- 0.01 100.70
+Peso do Picnometro cheio no 4: 100.77 +/- 0.01 100.77
+Peso do Picnometro cheio no 5: 100.85 +/- 0.01 100.85
+Peso do Picnometro cheio no 6: 100.91 +/- 0.01 100.91
+Peso do Picnometro cheio no 7: 100.99 +/- 0.01 100.99
+Peso do Picnometro cheio no 8: 101.04 +/- 0.01 101.04
+Peso do Picnometro cheio no 9: 101.13 +/- 0.01 101.13
+
+
+
+24 0: temp.equ. 24c e 0.0 +/- 0.1
+27 1: temp.equ. 26c e 0.4 +/- 0.1
+30 2: temp.equ. 28c e 0.7 +/- 0.1
+33 3: temp.equ. 31c e 1.3 +/- 0.1
+36 4: temp.equ. 35c e 1.7 +/- 0.1
+39 5: temp.equ. 38c e 2.1 +/- 0.1
+42 6: temp.equ. 41c e 2.9 +/- 0.1
+45 7: temp.equ. 44c e 3.8 +/- 0.1
+48 8: temp.equ. 45c e 4.7 +/- 0.1
+51 9: temp.equ. 49c e 6.1 +/- 0.1
+
+

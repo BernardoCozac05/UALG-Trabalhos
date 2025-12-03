@@ -1,0 +1,14 @@
+The Crown of Eternity
+[0]
+You stand at the edge of the Dark Forest, seeking the Crown of Eternity.
++ 1. Enter the forest
++ 2. Follow the river
+Select your option: Story state loaded successfully.
+[10]
+You find a bridge guarded by a troll demanding passage.
++ 12. Pay with gold
++ 13. Fight the troll
+Select your option: [12]
+The troll takes your gold and lets you cross. You reach the castle gate.
++ 18. Enter the gate
+Select your option: Error: cannot access or read from standard input

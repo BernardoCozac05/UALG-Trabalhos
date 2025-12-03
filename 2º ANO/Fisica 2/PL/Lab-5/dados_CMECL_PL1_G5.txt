@@ -1,0 +1,84 @@
+
+ERRO 
+Ponto 4.1
+
+multimetro(em modo de voltımetro) - +- 0.001 V~(AC)
+
+regua - +-0.05 cm
+
+pinça amperimetrica - +-0.1 A~
+
+-----------------------
+DADOS
+
+
+Ponto 4.2
+
+
+r = 1 cm
+
+campo residual = 0.005 V / 0.030 (aparelho ligado)
+
+I(10A) = 0.214V
+I(20A) = 0.414V
+I(30A) = 0.610V
+I(40A) = 0.812V
+I(50A) = 1.000V
+I(60A) = 1.203V
+I(70A) = 1.396V
+I(80A) = 1.583V
+I(90A) = 1.762V
+
+
+-------------------------
+Ponto 4.3
+90A
+
+r(1cm) = 1.626V
+r(1.5cm) = 1.350V
+r(2cm) = 0.860V
+r(2.5cm) = 0.623 V
+r(3cm) = 0.532 V
+r(3.5cm) = 0.435 V
+r(4cm) = 0.366 V
+r(4.5cm) = 0.319 V
+
+------------------------
+Ponto 4.5
+90A
+Parte Direita
+
+r(1cm) = 1.638V
+r(1.5cm) = 0.930V
+r(2cm) = 0.715V
+r(2.5cm) = 0.660V
+r(3cm) = 0.430V
+r(3.5cm) = 0.373V
+r(4cm) = 0.295V
+r(4.5cm) = 0.266V
+
+
+Parte Esquerda
+r(1cm) = 1.648V
+r(1.5cm) = 1.136V
+r(2cm) = 0.786V
+r(2.5cm) = 0.619V
+r(3cm) = 0.481V
+r(3.5cm) = 0.405V
+r(4cm) = 0.341V
+r(4.5cm) = 0.287V
+
+
+MEIO da esquerda pa direita
+
+r(1cm) = 1.864V
+r(1.5cm) = 1.372V
+r(2cm) = 1.202V
+r(2.5cm) = 1.085V
+r(3cm) =  1.035V
+r(3.5cm) = 1.012V
+r(4cm) = 1.053V
+r(4.5cm) = 1.112V
+r(5cm) = 1.241V
+r(5.5cm) = 1.460V
+r(6cm) = 1.860V

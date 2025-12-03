@@ -1,0 +1,65 @@
+Debug Info: Testing interactivePlay
+The Crown of Eternity
+[0]
+You stand at the edge of the Dark Forest, seeking the Crown of Eternity.
++ 1. Enter the forest
++ 2. Follow the river
+Select your option: [1]
+You step into the forest. The air is thick with mist.
++ 3. Climb a tree to scout
++ 4. Keep walking forward
+Select your option: [4]
+A wolf appears on the trail, growling.
++ 6. Fight the wolf
++ 7. Flee into the woods
+Select your option: [7]
+You escape, but drop your pack of supplies in the rush.
++ 8. Continue without supplies
+Select your option: [0]
+You stand at the edge of the Dark Forest, seeking the Crown of Eternity.
++ 1. Enter the forest
++ 2. Follow the river
+Select your option: [1]
+You step into the forest. The air is thick with mist.
++ 3. Climb a tree to scout
++ 4. Keep walking forward
+Select your option: [3]
+You climb a tall tree. From above, you see ancient ruins in the distance.
++ 5. Head to the ruins
++ 4. Return to the path
+Select your option: Error: invalid file or error opening file!
+Select your option: Story state saved successfully.
+Select your option: Story state loaded successfully.
+[3]
+You climb a tall tree. From above, you see ancient ruins in the distance.
++ 5. Head to the ruins
++ 4. Return to the path
+Select your option: [5]
+You find mossy ruins with a sealed stone door covered in strange markings.
++ 14. Solve the puzzle
++ 15. Force the door open
+Select your option: [15]
+The stone door collapses, trapping you forever in darkness.
+<FAILED>
+The Crown of Eternity
+[0]
+You stand at the edge of the Dark Forest, seeking the Crown of Eternity.
++ 1. Enter the forest
++ 2. Follow the river
+Select your option: Story state loaded successfully.
+[3]
+You climb a tall tree. From above, you see ancient ruins in the distance.
++ 5. Head to the ruins
++ 4. Return to the path
+Select your option: [5]
+You find mossy ruins with a sealed stone door covered in strange markings.
++ 14. Solve the puzzle
++ 15. Force the door open
+Select your option: [14]
+Inside the cave lies an altar. The Crown of Eternity glimmers in the torchlight.
++ 19. Take the Crown
++ 16. Leave the Crown
+Select your option: Story state saved successfully.
+Select your option: [19]
+You claim the Crown of Eternity. Power and glory are yours forever.
+<WON>

@@ -1,0 +1,43 @@
+************************************************************
+Erros de Leitura
+
+Balança: 0,01 g
+Cronometro: 1x10^-4 s
+Termometro: 0,5 Graus celsius
+Voltimetro: 0,01 V
+Amperimetro: 0,001 A
+
+************************************************************
+
+Dados Procedimento
+
+************************************************************
+
+Temperatura Ambiente (T0): 25 Graus celsius
+Temperatura inicial da agua (Tag,i): 14 Graus celsius
+Temperatura Maxima(2T0 − Tag,i): 36 Graus celsius
+
+Peso do Biboião vazio (mb)(sem a tampa com lampada): 37,57 g
+Peso boião cheio de água (mb + mag): 251,40 g
+Peso da água(mag): 213,83 g
+
+Tensão inicial: 12,04 V
+
+Valor de I(12,04V): 2,207
+
+Temperatura 1 min: 16 Graus celsius
+Temperatura 2 min: 16,5 Graus celsius
+Temperatura 3 min: 17 Graus celsius
+Temperatura 4 min: 18 Graus celsius
+Temperatura 5 min: 19 Graus celsius
+Temperatura 6 min: 19,5 Graus celsius
+Temperatura 7 min: 20 Graus celsius
+Temperatura 8 min: 22 Graus celsius
+Temperatura 9 min: 25 Graus celsius
+Temperatura 10 min: 27 Graus celsius
+Temperatura 11 min: 29 Graus celsius
+Temperatura 12 min: 30 Graus celsius
+Temperatura 13 min: 33 Graus celsius
+Temperatura 14 min: 36 Graus celsius
+
+************************************************************

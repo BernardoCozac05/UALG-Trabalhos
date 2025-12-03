@@ -1,0 +1,41 @@
+# Exemplo de ficheiro de cenas
+# Formato:
+# [<id>]
+# <<<
+# <linhas de descrição>
+# >>>
+# ***
+# + <idCenaDestino>. <descrição da opção>
+# ...
+# ***
+#
+# Para finais:
+# >>> WON   ou   >>> FAILED
+
+[1]
+<<<
+Acordas numa sala fria e húmida. Há dois corredores.
+>>>
+***
++ 2. Seguir pelo corredor da esquerda.
++ 3. Seguir pelo corredor da direita.
+***
+
+[2]
+<<<
+Encontras uma escada que leva à superfície. Conseguiste fugir!
+>>> WON
+
+[3]
+<<<
+O chão cede e cais numa cova cheia de espinhos.
+>>> FAILED
+
+[10]
+<<<
+Uma sala secreta com inscrições antigas nas paredes.
+>>>
+***
++ 2. Voltar para a sala inicial.
++ 3. Arriscar o caminho estreito.
+***

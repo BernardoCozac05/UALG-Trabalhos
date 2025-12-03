@@ -1,0 +1,354 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Report of submission 00151689_C_Diogo_Carvalho_90247</title>
+<link
+rel	="stylesheet"
+href	="../../styles/base.css"
+type	="text/css">
+</head>
+<body>
+<h2>Report #1</h2>
+
+<table>
+<tr>
+<th>Submission</th>
+<td>
+<a href="?inspect+data/contests/AED25P1/submissions/00151689_C_Diogo_Carvalho_90247">00151689_C_Diogo_Carvalho_90247</a>
+</td>
+</tr>
+<tr>
+<th>File</th>
+<td>
+<a href="?inspect+data/contests/AED25P1/submissions/00151689_C_Diogo_Carvalho_90247/Story.java">Story.java</a>
+<a href="data/contests/AED25P1/submissions/00151689_C_Diogo_Carvalho_90247/Story.java">[Download]</a>
+</td>
+
+<tr><th>Received</td>	<td>Tue Sep 23 11:35:43 +0100 2025</td></tr>
+<tr><th>Analyzed</td>	<td>Tue Sep 23 11:35:43 +0100 2025 (0:00:00)</td></tr><tr>
+<th>Team</th>
+<td>
+<a href="?inspect+data/contests/AED25P1/groups/students/Diogo_Carvalho_90247">
+Diogo_Carvalho_90247
+</a> Login: <code>Diogo_Carvalho_90247</code> Group: students [students]
+</td><tr>
+<th>Language</th>
+<td>
+<a href="?inspect+data/contests/AED25P1/languages/Java">
+Java
+</a>
+</td><tr>
+<th>Problem</th>
+<td>
+<a href="?inspect+data/contests/AED25P1/problems/C">
+C: Story
+</a>
+</td><tr>
+<th>Compilation</th>
+<td>src/Story.java:43: error: cannot find symbol
+            if (n == null || n.getValue() == null) continue;
+                              ^
+  symbol:   method getValue()
+  location: variable n of type Node<Scene>
+src/Story.java:44: error: cannot find symbol
+            idToNode.put(n.getValue().getId(), n);
+                          ^
+  symbol:   method getValue()
+  location: variable n of type Node<Scene>
+src/Story.java:82: error: cannot find symbol
+            for (Node<Scene> node : nodes) idMap.put(node.getValue().getId(), node);
+                                                         ^
+  symbol:   method getValue()
+  location: variable node of type Node<Scene>
+src/Story.java:86: error: cannot find symbol
+                Scene sc = node.getValue();
+                               ^
+  symbol:   method getValue()
+  location: variable node of type Node<Scene>
+src/Story.java:111: error: cannot find symbol
+            while (current.getValue().getType() == Scene.Type.NORMAL &&
+                          ^
+  symbol:   method getValue()
+  location: variable current of type Node<Scene>
+src/Story.java:120: error: cannot find symbol
+                Node<Scene> next = findNextByOption(current.getValue(), choice);
+                                                           ^
+  symbol:   method getValue()
+  location: variable current of type Node<Scene>
+src/Story.java:125: error: cannot find symbol
+            Scene.Type t = current.getValue().getType();
+                                  ^
+  symbol:   method getValue()
+  location: variable current of type Node<Scene>
+src/Story.java:139: error: cannot find symbol
+            bw.write(Integer.toString(current.getValue().getId())); bw.newLine();
+                                             ^
+  symbol:   method getValue()
+  location: variable current of type Node<Scene>
+src/Story.java:181: error: cannot find symbol
+                System.out.println(current.getValue().toString());
+                                          ^
+  symbol:   method getValue()
+  location: variable current of type Node<Scene>
+src/Story.java:183: error: cannot find symbol
+                Scene.Type type = current.getValue().getType();
+                                         ^
+  symbol:   method getValue()
+  location: variable current of type Node<Scene>
+src/Story.java:212: error: cannot find symbol
+                Node<Scene> next = findNextByOption(current.getValue(), choice);
+                                                           ^
+  symbol:   method getValue()
+  location: variable current of type Node<Scene>
+11 errors</td>
+</tr>
+</table><table>
+<tr>	<th>CPU	  </th><td>0 (0) sec</td>	</tr>
+<tr>	<th>Memory	  </th><td>0 kbytes</td>			</tr>
+<tr>	<th>Classification</th><td>Compile Time Error</td>		</tr>
+<tr>	<th>Mark</th>	  <td>0</td>		</tr>
+<tr>
+<th valign="top">Observations</th>
+<td><pre></pre></td>
+</tr>
+<tr>
+<th valign="top">Feedback</th>
+<td><pre></pre></td>
+</tr>
+
+<tr>
+<th>Code</th>
+<td></td>
+</table>
+<pre>
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * Problema C — Story
+ * Implementa a história (grafo de cenas) e a jogabilidade (não-interativa e interativa).
+ * Requer as classes Option.java, Scene.java e Node.java (todas na default package).
+ */
+public class Story {
+
+    /* Mensagens exigidas */
+    public static final String FILE_ERROR = "Error: invalid file or error opening file!";
+    public static final String NUMBER_FORMAT_ERROR = "Error: invalid number format!";
+    public static final String SAVE_SUCCESS = "Story state saved successfully.";
+    public static final String LOAD_SUCCESS = "Story state loaded successfully.";
+    public static final String INVALID_LOAD_STORY_NAME = "Error: story title in file does not match.";
+    public static final String INVALID_LOAD_SCENE = "Error: invalid scene id in file.";
+    public static final String INVALID_NUMBER =
+            "Invalid option. Please enter a number of an option, or one of the commands (PRINT,RESET,LOAD,SAVE).";
+    public static final String INVALID_OPTION = "Invalid option. Such option does not exist.";
+
+    private final String title;
+    private final Node&lt;Scene&gt;[] nodes;                // nó inicial é nodes[0]
+    private final Map&lt;Integer, Node&lt;Scene&gt;&gt; idToNode; // mapa id cena -&gt; nó
+    private Node&lt;Scene&gt; current;
+
+    /** Construtor */
+    public Story(String title, Node&lt;Scene&gt;[] nodes) {
+        if (title == null || title.isEmpty() || nodes == null || nodes.length == 0) {
+            throw new IllegalArgumentException("Invalid Story arguments");
+        }
+        this.title = title;
+        this.nodes = nodes;
+        this.current = nodes[0];
+        this.idToNode = new HashMap&lt;&gt;();
+        for (Node&lt;Scene&gt; n : nodes) {
+            if (n == null || n.getValue() == null) continue;
+            idToNode.put(n.getValue().getId(), n);
+        }
+    }
+
+    public String getTitle() { return title; }
+    public Node&lt;Scene&gt; getCurrent() { return current; }
+    public void reset() { current = nodes[0]; }
+
+    /**
+     * Lê uma Story de ficheiro:
+     * 1ª linha: título
+     * 2ª linha: inteiro n (número de cenas)
+     * depois: n cenas no formato do Problema B (Scene.parseScene)
+     *
+     * IOException  -&gt; imprime FILE_ERROR e retorna null
+     * NumberFormat -&gt; imprime NUMBER_FORMAT_ERROR e retorna null
+     */
+    public static Story parseStory(String fileName) {
+        try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
+            String title = br.readLine();
+            if (title == null) { System.out.println(FILE_ERROR); return null; }
+
+            String nLine = br.readLine();
+            if (nLine == null) { System.out.println(NUMBER_FORMAT_ERROR); return null; }
+            int n = Integer.parseInt(nLine.trim());
+            if (n &lt;= 0) { System.out.println(NUMBER_FORMAT_ERROR); return null; }
+
+            @SuppressWarnings("unchecked")
+            Node&lt;Scene&gt;[] nodes = new Node[n];
+
+            // ler cenas e criar nós
+            for (int i = 0; i &lt; n; i++) {
+                Scene s = Scene.parseScene(br);   // pode lançar IOException/NumberFormatException
+                nodes[i] = new Node&lt;&gt;(s);
+            }
+
+            // mapa id -&gt; nó
+            Map&lt;Integer, Node&lt;Scene&gt;&gt; idMap = new HashMap&lt;&gt;();
+            for (Node&lt;Scene&gt; node : nodes) idMap.put(node.getValue().getId(), node);
+
+            // ligar vizinhos com base nas opções
+            for (Node&lt;Scene&gt; node : nodes) {
+                Scene sc = node.getValue();
+                if (sc.getType() == Scene.Type.NORMAL) {
+                    for (Option o : sc.getOptions()) {
+                        Node&lt;Scene&gt; dest = idMap.get(o.getId());
+                        if (dest != null) node.addNeighbour(dest);
+                    }
+                }
+            }
+
+            return new Story(title, nodes);
+
+        } catch (NumberFormatException e) {
+            System.out.println(NUMBER_FORMAT_ERROR);
+            return null;
+        } catch (IOException e) {
+            System.out.println(FILE_ERROR);
+            return null;
+        }
+    }
+
+    /** Simulação não-interativa: lê escolhas do stdin e imprime: WON / FAILED / WAITING */
+    public void nonInteractivePlay() {
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
+            reset();
+            String line;
+            while (current.getValue().getType() == Scene.Type.NORMAL &amp;&amp;
+                   (line = br.readLine()) != null) {
+                line = line.trim();
+                if (line.isEmpty()) continue;
+
+                int choice;
+                try { choice = Integer.parseInt(line); }
+                catch (NumberFormatException e) { System.out.println("WAITING"); return; }
+
+                Node&lt;Scene&gt; next = findNextByOption(current.getValue(), choice);
+                if (next == null) { System.out.println("WAITING"); return; }
+                current = next;
+            }
+
+            Scene.Type t = current.getValue().getType();
+            if (t == Scene.Type.WON) System.out.println("WON");
+            else if (t == Scene.Type.FAILED) System.out.println("FAILED");
+            else System.out.println("WAITING");
+
+        } catch (IOException e) {
+            System.out.println("WAITING");
+        }
+    }
+
+    /** Guarda o estado (título e id da cena atual) em ficheiro. */
+    public boolean saveStoryState(String fileName) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(fileName))) {
+            bw.write(title); bw.newLine();
+            bw.write(Integer.toString(current.getValue().getId())); bw.newLine();
+            System.out.println(SAVE_SUCCESS);
+            return true;
+        } catch (IOException e) {
+            System.out.println(FILE_ERROR);
+            return false;
+        }
+    }
+
+    /** Carrega o estado a partir de ficheiro, validando título e id. */
+    public boolean loadStoryState(String fileName) {
+        try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
+            String fileTitle = br.readLine();
+            if (fileTitle == null) { System.out.println(FILE_ERROR); return false; }
+
+            String idLine = br.readLine();
+            if (idLine == null) { System.out.println(NUMBER_FORMAT_ERROR); return false; }
+
+            int targetId;
+            try { targetId = Integer.parseInt(idLine.trim()); }
+            catch (NumberFormatException e) { System.out.println(NUMBER_FORMAT_ERROR); return false; }
+
+            if (!this.title.equals(fileTitle)) { System.out.println(INVALID_LOAD_STORY_NAME); return false; }
+
+            Node&lt;Scene&gt; node = idToNode.get(targetId);
+            if (node == null) { System.out.println(INVALID_LOAD_SCENE); return false; }
+
+            this.current = node;
+            System.out.println(LOAD_SUCCESS);
+            return true;
+
+        } catch (IOException e) {
+            System.out.println(FILE_ERROR);
+            return false;
+        }
+    }
+
+    /** Jogo interativo conforme especificação. */
+    public void interactivePlay() {
+        System.out.println(title);
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
+            while (true) {
+                System.out.println(current.getValue().toString());
+
+                Scene.Type type = current.getValue().getType();
+                if (type == Scene.Type.WON || type == Scene.Type.FAILED) return;
+
+                System.out.print("Select your option: ");
+                String line = br.readLine();
+                if (line == null) return;
+                line = line.trim();
+                if (line.isEmpty()) { System.out.println(INVALID_NUMBER); continue; }
+
+                // comandos
+                if (line.equalsIgnoreCase("RESET")) { reset(); continue; }
+                if (line.equalsIgnoreCase("PRINT")) { continue; }
+                if (line.toUpperCase().startsWith("SAVE")) {
+                    String[] parts = line.split("\\s+", 2);
+                    if (parts.length &lt; 2 || parts[1].trim().isEmpty()) System.out.println(FILE_ERROR);
+                    else saveStoryState(parts[1].trim());
+                    continue;
+                }
+                if (line.toUpperCase().startsWith("LOAD")) {
+                    String[] parts = line.split("\\s+", 2);
+                    if (parts.length &lt; 2 || parts[1].trim().isEmpty()) System.out.println(FILE_ERROR);
+                    else loadStoryState(parts[1].trim());
+                    continue;
+                }
+
+                int choice;
+                try { choice = Integer.parseInt(line); }
+                catch (NumberFormatException e) { System.out.println(INVALID_NUMBER); continue; }
+
+                Node&lt;Scene&gt; next = findNextByOption(current.getValue(), choice);
+                if (next == null) System.out.println(INVALID_OPTION);
+                else current = next;
+            }
+        } catch (IOException ignored) { }
+    }
+
+    /* --------------------------- Helpers --------------------------- */
+
+    private Node&lt;Scene&gt; findNextByOption(Scene scene, int optionId) {
+        for (Option o : scene.getOptions()) {
+            if (o.getId() == optionId) return idToNode.get(optionId);
+        }
+        return null;
+    }
+}
+
+</pre>
+
+</body>

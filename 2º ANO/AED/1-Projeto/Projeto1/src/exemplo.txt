@@ -1,0 +1,137 @@
+The Crown of Eternity
+20
+[0]
+<<<
+You stand at the edge of the Dark Forest, seeking the Crown of Eternity.
+>>>
+***
++ 1. Enter the forest
++ 2. Follow the river
+***
+[1]
+<<<
+You step into the forest. The air is thick with mist.
+>>>
+***
++ 3. Climb a tree to scout
++ 4. Keep walking forward
+***
+[2]
+<<<
+You follow the river as it winds deeper into the kingdom.
+>>>
+***
++ 9. Build a raft
++ 10. Cross a bridge ahead
+***
+[3]
+<<<
+You climb a tall tree. From above, you see ancient ruins in the distance.
+>>>
+***
++ 5. Head to the ruins
++ 4. Return to the path
+***
+[4]
+<<<
+A wolf appears on the trail, growling.
+>>>
+***
++ 6. Fight the wolf
++ 7. Flee into the woods
+***
+[5]
+<<<
+You find mossy ruins with a sealed stone door covered in strange markings.
+>>>
+***
++ 14. Solve the puzzle
++ 15. Force the door open
+***
+[6]
+<<<
+You slay the wolf, but suffer wounds.
+>>>
+***
++ 8. Press on
+***
+[7]
+<<<
+You escape, but drop your pack of supplies in the rush.
+>>>
+***
++ 8. Continue without supplies
+***
+[8]
+<<<
+You reach a cave entrance carved into the cliffs.
+>>>
+***
++ 14. Enter the cave
++ 16. Rest outside
+***
+[9]
+<<<
+You build a crude raft and push into the river. Halfway across, it sinks.
+>>>
+***
++ 11. Swim to shore
+***
+[10]
+<<<
+You find a bridge guarded by a troll demanding passage.
+>>>
+***
++ 12. Pay with gold
++ 13. Fight the troll
+***
+[11]
+<<<
+You wash ashore at the mouth of a hidden cave.
+>>>
+***
++ 14. Enter the cave
++ 17. Follow the river further
+***
+[12]
+<<<
+The troll takes your gold and lets you cross. You reach the castle gate.
+>>>
+***
++ 18. Enter the gate
+***
+[13]
+<<<
+The troll strikes you down. Your quest ends here.
+>>><FAILED>
+[14]
+<<<
+Inside the cave lies an altar. The Crown of Eternity glimmers in the torchlight.
+>>>
+***
++ 19. Take the Crown
++ 16. Leave the Crown
+***
+[15]
+<<<
+The stone door collapses, trapping you forever in darkness.
+>>><FAILED>
+[16]
+<<<
+As you rest, bandits ambush and overwhelm you.
+>>><FAILED>
+[17]
+<<<
+The river carries you into treacherous swamps where you vanish forever.
+>>><FAILED>
+[18]
+<<<
+You stand in the castle's throne room. The Crown of Eternity rests before you.
+>>>
+***
++ 19. Take the Crown
+***
+[19]
+<<<
+You claim the Crown of Eternity. Power and glory are yours forever.
+>>><WON>

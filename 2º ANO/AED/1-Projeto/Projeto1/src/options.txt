@@ -1,0 +1,13 @@
+# Cada linha é uma opção no formato: + <id>. <descrição>
+# Linhas vazias e linhas começadas por # são ignoradas.
+
++ 7. Seguir pelo corredor.
++42. Abrir porta
++   003   .   Falar com o guarda.   
++0. Sair.
+
+# Casos inválidos (para ver erros)
+7. Falta o +
++ sete. Texto
++ 3 Texto
++ -1. Opcao negativa

@@ -1,0 +1,8 @@
+2
+10
+SAVE
+SAVE troll.sav
+PRINT
+13
+LOAD troll.sav
+12

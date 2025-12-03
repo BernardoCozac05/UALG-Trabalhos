@@ -1,0 +1,319 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Report of submission 00152564_C_Diogo_Carvalho_90247</title>
+<link
+rel	="stylesheet"
+href	="../../styles/base.css"
+type	="text/css">
+</head>
+<body>
+<h2>Report #1</h2>
+
+<table>
+<tr>
+<th>Submission</th>
+<td>
+<a href="?inspect+data/contests/AED25P1/submissions/00152564_C_Diogo_Carvalho_90247">00152564_C_Diogo_Carvalho_90247</a>
+</td>
+</tr>
+<tr>
+<th>File</th>
+<td>
+<a href="?inspect+data/contests/AED25P1/submissions/00152564_C_Diogo_Carvalho_90247/Story.java">Story.java</a>
+<a href="data/contests/AED25P1/submissions/00152564_C_Diogo_Carvalho_90247/Story.java">[Download]</a>
+</td>
+
+<tr><th>Received</td>	<td>Tue Sep 23 11:50:18 +0100 2025</td></tr>
+<tr><th>Analyzed</td>	<td>Tue Sep 23 11:50:18 +0100 2025 (0:00:00)</td></tr><tr>
+<th>Team</th>
+<td>
+<a href="?inspect+data/contests/AED25P1/groups/students/Diogo_Carvalho_90247">
+Diogo_Carvalho_90247
+</a> Login: <code>Diogo_Carvalho_90247</code> Group: students [students]
+</td><tr>
+<th>Language</th>
+<td>
+<a href="?inspect+data/contests/AED25P1/languages/Java">
+Java
+</a>
+</td><tr>
+<th>Problem</th>
+<td>
+<a href="?inspect+data/contests/AED25P1/problems/C">
+C: Story
+</a>
+</td><tr>
+<th>Compilation</th>
+<td>src/Story.java:63: warning: [unchecked] unchecked call to Node(T) as a member of the raw type Node
+                nodes[i] = new Node/*<Scene>*/(s);
+                           ^
+  where T is a type-variable:
+    T extends Object declared in class Node
+1 warning</td>
+</tr>
+</table><table>
+<tr>	<th>CPU	  </th><td>0 (0) sec</td>	</tr>
+<tr>	<th>Memory	  </th><td>0 kbytes</td>			</tr>
+<tr>	<th>Classification</th><td>Compile Time Error</td>		</tr>
+<tr>	<th>Mark</th>	  <td>0</td>		</tr>
+<tr>
+<th valign="top">Observations</th>
+<td><pre></pre></td>
+</tr>
+<tr>
+<th valign="top">Feedback</th>
+<td><pre></pre></td>
+</tr>
+
+<tr>
+<th>Code</th>
+<td></td>
+</table>
+<pre>
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Story {
+
+    public static final String FILE_ERROR = "Error: invalid file or error opening file!";
+    public static final String NUMBER_FORMAT_ERROR = "Error: invalid number format!";
+    public static final String SAVE_SUCCESS = "Story state saved successfully.";
+    public static final String LOAD_SUCCESS = "Story state loaded successfully.";
+    public static final String INVALID_LOAD_STORY_NAME = "Error: story title in file does not match.";
+    public static final String INVALID_LOAD_SCENE = "Error: invalid scene id in file.";
+    public static final String INVALID_NUMBER =
+            "Invalid option. Please enter a number of an option, or one of the commands (PRINT,RESET,LOAD,SAVE).";
+    public static final String INVALID_OPTION = "Invalid option. Such option does not exist.";
+
+    private final String title;
+    private final Node/*&lt;Scene&gt;*/[] nodes;                 // nó inicial é nodes[0]
+    private final Map&lt;Integer, Node/*&lt;Scene&gt;*/&gt; idToNode;  // id da cena -&gt; nó
+    private Node/*&lt;Scene&gt;*/ current;
+
+    public Story(String title, Node/*&lt;Scene&gt;*/[] nodes) {
+        if (title == null || title.isEmpty() || nodes == null || nodes.length == 0) {
+            throw new IllegalArgumentException("Invalid Story arguments");
+        }
+        this.title = title;
+        this.nodes = nodes;
+        this.current = nodes[0];
+        this.idToNode = new HashMap&lt;&gt;();
+        for (Node/*&lt;Scene&gt;*/ n : nodes) {
+            Scene s = nodeScene(n);
+            if (s != null) idToNode.put(s.getId(), n);
+        }
+    }
+
+    public String getTitle() { return title; }
+    public Node/*&lt;Scene&gt;*/ getCurrent() { return current; }
+    public void reset() { current = nodes[0]; }
+
+    public static Story parseStory(String fileName) {
+        try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
+            String title = br.readLine();
+            if (title == null) { System.out.println(FILE_ERROR); return null; }
+
+            String nLine = br.readLine();
+            if (nLine == null) { System.out.println(NUMBER_FORMAT_ERROR); return null; }
+            int n = Integer.parseInt(nLine.trim());
+            if (n &lt;= 0) { System.out.println(NUMBER_FORMAT_ERROR); return null; }
+
+            @SuppressWarnings("unchecked")
+            Node/*&lt;Scene&gt;*/[] nodes = new Node[n];
+
+            for (int i = 0; i &lt; n; i++) {
+                Scene s = Scene.parseScene(br);      // pode lançar IOE/NFE
+                // Assumimos Node(Scene) existe (é o que costuma ser fornecido).
+                nodes[i] = new Node/*&lt;Scene&gt;*/(s);
+            }
+
+            // mapa id -&gt; nó
+            Map&lt;Integer, Node/*&lt;Scene&gt;*/&gt; idMap = new HashMap&lt;&gt;();
+            for (Node/*&lt;Scene&gt;*/ node : nodes) {
+                Scene sc = nodeScene(node);
+                if (sc != null) idMap.put(sc.getId(), node);
+            }
+
+            // Não precisamos de ligar vizinhos para jogar (usamos idMap),
+            // por isso evitamos dependências a addNeighbour/getNeighbours.
+
+            return new Story(title, nodes);
+
+        } catch (NumberFormatException e) {
+            System.out.println(NUMBER_FORMAT_ERROR);
+            return null;
+        } catch (IOException e) {
+            System.out.println(FILE_ERROR);
+            return null;
+        }
+    }
+
+    public void nonInteractivePlay() {
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
+            reset();
+            String line;
+            while (nodeScene(current).getType() == Scene.Type.NORMAL &amp;&amp;
+                   (line = br.readLine()) != null) {
+                line = line.trim();
+                if (line.isEmpty()) continue;
+
+                int choice;
+                try { choice = Integer.parseInt(line); }
+                catch (NumberFormatException e) { System.out.println("WAITING"); return; }
+
+                Node/*&lt;Scene&gt;*/ next = findNextByOption(nodeScene(current), choice);
+                if (next == null) { System.out.println("WAITING"); return; }
+                current = next;
+            }
+
+            Scene.Type t = nodeScene(current).getType();
+            if (t == Scene.Type.WON) System.out.println("WON");
+            else if (t == Scene.Type.FAILED) System.out.println("FAILED");
+            else System.out.println("WAITING");
+
+        } catch (IOException e) {
+            System.out.println("WAITING");
+        }
+    }
+
+    public boolean saveStoryState(String fileName) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(fileName))) {
+            bw.write(title); bw.newLine();
+            bw.write(Integer.toString(nodeScene(current).getId())); bw.newLine();
+            System.out.println(SAVE_SUCCESS);
+            return true;
+        } catch (IOException e) {
+            System.out.println(FILE_ERROR);
+            return false;
+        }
+    }
+
+    public boolean loadStoryState(String fileName) {
+        try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
+            String fileTitle = br.readLine();
+            if (fileTitle == null) { System.out.println(FILE_ERROR); return false; }
+
+            String idLine = br.readLine();
+            if (idLine == null) { System.out.println(NUMBER_FORMAT_ERROR); return false; }
+
+            int targetId;
+            try { targetId = Integer.parseInt(idLine.trim()); }
+            catch (NumberFormatException e) { System.out.println(NUMBER_FORMAT_ERROR); return false; }
+
+            if (!this.title.equals(fileTitle)) { System.out.println(INVALID_LOAD_STORY_NAME); return false; }
+
+            Node/*&lt;Scene&gt;*/ node = idToNode.get(targetId);
+            if (node == null) { System.out.println(INVALID_LOAD_SCENE); return false; }
+
+            this.current = node;
+            System.out.println(LOAD_SUCCESS);
+            return true;
+
+        } catch (IOException e) {
+            System.out.println(FILE_ERROR);
+            return false;
+        }
+    }
+
+    public void interactivePlay() {
+        System.out.println(title);
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
+            while (true) {
+                System.out.println(nodeScene(current).toString());
+
+                Scene.Type type = nodeScene(current).getType();
+                if (type == Scene.Type.WON || type == Scene.Type.FAILED) return;
+
+                System.out.print("Select your option: ");
+                String line = br.readLine();
+                if (line == null) return;
+                line = line.trim();
+                if (line.isEmpty()) { System.out.println(INVALID_NUMBER); continue; }
+
+                if (line.equalsIgnoreCase("RESET")) { reset(); continue; }
+                if (line.equalsIgnoreCase("PRINT")) { continue; }
+                if (line.toUpperCase().startsWith("SAVE")) {
+                    String[] parts = line.split("\\s+", 2);
+                    if (parts.length &lt; 2 || parts[1].trim().isEmpty()) System.out.println(FILE_ERROR);
+                    else saveStoryState(parts[1].trim());
+                    continue;
+                }
+                if (line.toUpperCase().startsWith("LOAD")) {
+                    String[] parts = line.split("\\s+", 2);
+                    if (parts.length &lt; 2 || parts[1].trim().isEmpty()) System.out.println(FILE_ERROR);
+                    else loadStoryState(parts[1].trim());
+                    continue;
+                }
+
+                int choice;
+                try { choice = Integer.parseInt(line); }
+                catch (NumberFormatException e) { System.out.println(INVALID_NUMBER); continue; }
+
+                Node/*&lt;Scene&gt;*/ next = findNextByOption(nodeScene(current), choice);
+                if (next == null) System.out.println(INVALID_OPTION);
+                else current = next;
+            }
+        } catch (IOException ignored) { }
+    }
+
+    /* ============================== Helpers ============================== */
+
+    /** Extrai o Scene guardado num Node, independentemente do nome do método/campo. */
+    @SuppressWarnings("unchecked")
+    private static Scene nodeScene(Node/*&lt;Scene&gt;*/ n) {
+        if (n == null) return null;
+
+        // Tentar métodos usuais
+        String[] mNames = {"getValue", "getElement", "getScene", "getData", "get"};
+        for (String nm : mNames) {
+            try {
+                Method m = n.getClass().getMethod(nm);
+                Object v = m.invoke(n);
+                if (v instanceof Scene) return (Scene) v;
+            } catch (Exception ignore) {}
+        }
+
+        // Tentar campos usuais
+        String[] fNames = {"value", "element", "scene", "data", "obj"};
+        for (String fn : fNames) {
+            try {
+                Field f = n.getClass().getDeclaredField(fn);
+                f.setAccessible(true);
+                Object v = f.get(n);
+                if (v instanceof Scene) return (Scene) v;
+            } catch (Exception ignore) {}
+        }
+
+        // Procurar qualquer campo do tipo Scene
+        try {
+            for (Field f : n.getClass().getDeclaredFields()) {
+                f.setAccessible(true);
+                Object v = f.get(n);
+                if (v instanceof Scene) return (Scene) v;
+            }
+        } catch (Exception ignore) {}
+
+        throw new IllegalStateException("Cannot access Scene value from Node");
+    }
+
+    /** Encontra o nó de destino pelo id da opção usando o mapa id-&gt;nó. */
+    private Node/*&lt;Scene&gt;*/ findNextByOption(Scene scene, int optionId) {
+        for (Option o : scene.getOptions()) {
+            if (o.getId() == optionId) return idToNode.get(optionId);
+        }
+        return null;
+    }
+}
+
+</pre>
+
+</body>
