@@ -1,12 +1,12 @@
-# nome: Diogo Alexandre Botas Carvalho, número: a90247
-# nome: Diogo Coelho de Freitas, número: a90147
+# nome: Diogo Alexandre Botas Carvalho, nï¿½mero: a90247
+# nome: Diogo Coelho de Freitas, nï¿½mero: a90147
 #
 # ======================== MIPS Assembly DNA Paternity Checker ========================	#
 #											#
 # ---------------------------------- Program Purpose ----------------------------------	#
 # This MIPS Assembly program reads a file named "dna.txt" containing alternating lines	#
 # of names and corresponding DNA sequences. The program searches for a predefined	#
-# child’s DNA substring (stored in "searchstring") within each DNA sequence.		#
+# childï¿½s DNA substring (stored in "searchstring") within each DNA sequence.		#
 #											#
 # The process for each person is as follows:						#
 # 1. Read and store the person's name.							#

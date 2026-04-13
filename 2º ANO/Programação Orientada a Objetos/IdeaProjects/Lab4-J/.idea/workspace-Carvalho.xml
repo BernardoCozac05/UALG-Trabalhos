@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8cd45cbe-4a0a-492d-84cc-b62180be1755" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../1 SEMESTRE/AED/1-Projeto/P1/P1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1 SEMESTRE/AED/Tutoria/P1/P1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab1-A/Lab1-A.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab1-A/src/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab1-A/src/Vetor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab1-B/Lab1-B.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab1-B/src/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab1-B/src/Vetor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab1-C/Lab1-C.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab1-C/src/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab1-C/src/Vetor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab2-D/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab2-D/Lab2-D.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab2-D/src/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab2-D/src/Ponto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab2-D/src/SegmentoReta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab2-D/src/Vetor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab2-E/Lab2-E.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3-F/Lab3-F.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3-G/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3-G/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3-G/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3-G/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3-G/Lab3-G.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3-G/src/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3-G/src/Ponto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3-G/src/PontoTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3-G/src/SegmentoReta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3-G/src/SegmentoRetaTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3-G/src/Vetor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3-G/src/VetorTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3-H/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3-H/.idea/libraries/junit_jupiter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3-H/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3-H/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3-H/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3-H/Lab3-H.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3-H/src/AutoPilot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab3-H/src/AutoPilotTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4-I/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4-I/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4-I/.idea/libraries/junit_jupiter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4-I/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4-I/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4-I/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4-I/Lab4-I.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4-I/src/AutoPilot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4-I/src/AutoPilotTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4-I/src/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4-I/src/ClienteTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4-I/src/Ponto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4-I/src/PontoTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4-I/src/Route.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4-I/src/RouteTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4-I/src/SegmentoReta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4-I/src/SegmentoRetaTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4-I/src/Vetor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4-I/src/VetorTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_jupiter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab4-J.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AutoPilot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AutoPilotTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Circulo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CirculoTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ClienteTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Obstaculo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Poligono.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PoligonoTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ponto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PontoTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Quadrado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuadradoTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Retangulo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RetanguloTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Route.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RouteTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SegmentoReta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SegmentoRetaTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Triangulo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TrianguloTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Vetor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VetorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../1º Ano/Arquitetura de Computadores/Assembly/TPC-2/a90247a90147.asm" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../1º Ano/Arquitetura de Computadores/Assembly/TPC-2/a90247a90147.asm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/8. 891378375-MIT.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/ATT00001.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Enunciado Projeto 1 (v1_2).pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Enunciado Projeto 1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Option.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/P1 code.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/P1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/P1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/P1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/P1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/P1/P1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/P1/out/production/P1/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/P1/out/production/P1/Option.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/P1/out/production/P1/Scene$Type.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/P1/out/production/P1/Scene.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/P1/out/production/P1/SceneTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/P1/src/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/P1/src/Option.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/P1/src/Scene.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/P1/src/SceneTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/src/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/src/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/src/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/src/Option.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/src/Option.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/src/OptionFileTester.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/src/OptionFileTester.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/src/Scene$Type.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/src/Scene.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/src/Scene.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/src/SceneFileTester.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/src/SceneFileTester.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/src/Story.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/src/Story.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/src/choices.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/src/exemplo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/src/options.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/src/out_c11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/src/out_c12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/src/scenes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/src/story.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/src/test_c11_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/src/test_c11_output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/src/test_c12_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/src/test_c12_output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/src/tree.sav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/Projeto1/troll.sav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00024362_A_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00025067_A_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00025527_B_Diogo_Carvalho_902471 (1).html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00025527_B_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00026425_B_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00027449_B_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00028653_B_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00029463_B_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00068714_A_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00069276_B_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00070787_B_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00070968_B_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00072435_B_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00081501_B_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00081774_B_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00151352_C_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00151689_C_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00152564_C_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00153048_C_Diogo_Carvalho_902471 (1).html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00153048_C_Diogo_Carvalho_902471 (2).html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00153048_C_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00287271_C_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00410014_C_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00410428_C_Diogo_Carvalho_902471 (1).html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00410428_C_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00410695_C_Diogo_Carvalho_902471 (1).html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00410695_C_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00411006_C_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00411330_C_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00411597_C_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00412550_C_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00412763_C_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/1-Projeto/homedshakdatacontestsAED25P1submissions00413509_C_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/13-19 out/AED - Exercícios Cap2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/13-19 out/P2 - Fintlist.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/13-19 out/TemporalAnalysisUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/2-Projeto/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/2-Projeto/2 Projeto.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/2-Projeto/ATT00001.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/2-Projeto/Apresentar.paint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/2-Projeto/FintList2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/2-Projeto/P2 - Fintlist.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/2-Projeto/P2 for students.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/2-Projeto/Projeto_2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/2-Projeto/Projeto_2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/2-Projeto/T2/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/2-Projeto/T2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/2-Projeto/T2/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/2-Projeto/T2/src/aed/collections/FintList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/2-Projeto/T2/src/aed/collections/LinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/2-Projeto/T2/src/aed/utils/TemporalAnalysisUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/2-Projeto/T2/src/aed/utils/TimeAnalysisUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/2-Projeto/aed.collections/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/2-Projeto/aed.collections/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/2-Projeto/aed.collections/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/2-Projeto/aed.collections/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/2-Projeto/aed.collections/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/2-Projeto/aed.collections/src/aed/collections/FintList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/2-Projeto/aed.collections/src/aed/collections/LinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/2-Projeto/homedshakdatacontestsAED25P2submissions00088250_A_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/2-Projeto/homedshakdatacontestsAED25P2submissions00445427_A_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/2-Projeto/homedshakdatacontestsAED25P2submissions00534026_A_Diogo_Carvalho_902471.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/3-Projeto/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/3-Projeto/P3 - Tabelas de Símbolos.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/3-Projeto/P3 for students/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/3-Projeto/P3 for students/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/3-Projeto/P3 for students/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/3-Projeto/P3 for students/src/aed/tables/IUAlshBucket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/3-Projeto/P3 for students/src/aed/tables/UAlshTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/3-Projeto/P3 for students/src/aed/trees/IUAlgTreeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/3-Projeto/P3 for students/src/aed/trees/UAlgTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Aulas/Aula 1 - Apresentação.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Aulas/Aula 10 - Bubblesort.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Aulas/Aula 11 e 12 - Mergesort.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Aulas/Aula 13 - Quicksort.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Aulas/Aula 14 - Coleções Informadas.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Aulas/Aula 15 - Árvores binárias de pesquisa.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Aulas/Aula 16 - Árvores Red-Black.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Aulas/Aula 17 - Coleções ordenadas.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Aulas/Aula 18 - Filas Prioritárias e Heapsort.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Aulas/Aula 19 - Tabelas de Dispersão.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Aulas/Aula 2  - Introdução ao Java.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Aulas/Aula 20 - Tratamento de colisões.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Aulas/Aula 21 - Dupla Dispersão.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Aulas/Aula 3  - Conceitos Avançados em  Java.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Aulas/Aula 4 - TAIs e Coleções.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Aulas/Aula 5 - Sacos e Pilhas.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Aulas/Aula 6 - Pilhas e Filas.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Aulas/Aula 7 - Análise de Complexidade de Algoritmos.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Aulas/Aula 8 - Análise de Algoritmos (continuação).pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Aulas/Aula 9  - Ordenação.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Aulas/Aulas.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/AED - Exercícios Cap 1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/Aula 1 - Apresentação.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/Aula 2  - Introdução ao Java.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/Aula 3  - Conceitos Avançados em  Java.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/Aula 4 - TAIs e Coleções.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/Aula 5 - Sacos e Pilhas.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/ContaBancaria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/Código de Honra.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/Enunciado Projeto 1 (v1_2).pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/P1 code.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/P1 for Students/exemplo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/P1 for Students/src/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/P1 for Students/src/Option.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/P1 for Students/src/Scene.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/P1 for Students/src/Story.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/P1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/P1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/P1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/P1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/P1/P1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/P1/out/production/P1/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/P1/out/production/P1/Option.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/P1/out/production/P1/Scene$Type.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/P1/out/production/P1/Scene.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/P1/out/production/P1/SceneTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/P1/src/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/P1/src/Option.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/P1/src/Scene.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/P1/src/SceneTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/SimpleMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/TD3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/Validações P1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/aed_pl01.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/aed_pl02.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/tests.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/tests/exemplo2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/tests/test_c11_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/tests/test_c11_output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/tests/test_c12_input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AED/Tutoria/tests/test_c12_output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Ficha-1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Ficha-2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Ficha-3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Ficha-4.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Ficha-5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Ficha-6.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Programacao_Cientifica_Python.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/T/Cap-1 Introdução 2025-26.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/T/Cap-2 Erros e Aritmética Computacional 2025-26.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/T/Cap-3 Equações Não Lineares 2025-26.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/T/Cap-4 Sistemas Equações Lineares 2025-26.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/T/Cap-5 Interpolação Polinomial 2025-26.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/T/Cap-6 Derivação e Integração Numérica 2025-26.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 1/Trabalho_1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 1/base_converter_simple.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 1/conversor_bases5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 1/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 1/main2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 1/unified_base_converter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/Melhor/bissection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/Melhor/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/Melhor/newton.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/Melhor/proposta_melhorada.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/Melhor/secant.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/Nova pasta/bissection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/Nova pasta/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/Nova pasta/newton.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/Nova pasta/secant.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/Projeto_2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/Trabalho2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/__MACOSX/._Trabalho2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/__MACOSX/.___pycache__" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/__MACOSX/._bissection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/__MACOSX/._main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/__MACOSX/._newton.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/__MACOSX/._screenshots" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/__MACOSX/._secant.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/__MACOSX/screenshots/._bissecao0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/__MACOSX/screenshots/._bissecao1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/__MACOSX/screenshots/._bissecao2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/__MACOSX/screenshots/._geogebra0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/__MACOSX/screenshots/._geogebra1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/__MACOSX/screenshots/._geogebra2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/__MACOSX/screenshots/._newton0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/__MACOSX/screenshots/._newton1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/__MACOSX/screenshots/._newton2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/__MACOSX/screenshots/._secante0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/__MACOSX/screenshots/._secante1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/__MACOSX/screenshots/._secante2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/bissection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/jonny/bissection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/jonny/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/jonny/newton.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/jonny/secant.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/jonny/trabalho2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/newton.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/screenshots/bissecao0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/screenshots/bissecao1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/screenshots/bissecao2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/screenshots/geogebra0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/screenshots/geogebra1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/screenshots/geogebra2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/screenshots/newton0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/screenshots/newton1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/screenshots/newton2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/screenshots/secante0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/screenshots/secante1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/screenshots/secante2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/secant.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/teste.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 2/trabalho2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 3/Projeto_3.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 3/Projeto_3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 3/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Análise Numérica/Trabalho 3/new/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/A_First_Course_in_Database_Systems_3ed_J.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/Abraham-Silberschatz-Henry-F.-Korth-S.-Sudarshan-Database-System-Concepts-McGraw-Hill-Education-2019.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/PL/PL05_ER_Rel .pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/PL/PL06_DDL.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/PL/PL07_SQL.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/PL/PL07_scripts.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/PL/PL_01-data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/PL/PL_01-filmes-schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/PL/PL_01_Tutorial.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/PL/PL_02_ModeloRelacional.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/PL/PL_03_AlgebraRelacional.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/PL/PL_04_ER.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/T/0 - Apresentação BD.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/T/01 - IntroBD.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/T/02-RelationalModel.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/T/03_RelationalAlgebra_Part1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/T/04_RelationalAlgebra_Part2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/T/05_ModeloEntidadeAssociacao.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/T/06_ModeloEntidadeAssociacao_Parte2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/T/07_SQL_Introducao.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/T/08_SQL_Parte2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/T/09_SQL_Parte3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/T/10_FN.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/Trabalhos/BD202526_Grupo_##_P1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/Trabalhos/BD202526_Grupo_##_P1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/Trabalhos/Enunciado_TP_BD_01_202526.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/Trabalhos/Enunciado_TP_BD_02_202526.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/Trabalhos/Enunciado_TP_BD_03_202526.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/Trabalhos/GruposTP_Equipa.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/Trabalhos/GruposTP_NumeroAluno.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/Trabalhos/P1/BD202526_Grupo_26_P1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/Trabalhos/P2/.$Modelo Entidade-Associação (ER).drawio.bkp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/Trabalhos/P2/.$Modelo Entidade-Associação (ER).drawio.dtmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/Trabalhos/P2/BD202526_Grupo_26_P1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/Trabalhos/P2/BD202526_Grupo_26_P2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/Trabalhos/P2/Imagem WhatsApp 2025-10-20 às 07.41.50_f9067694.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/Trabalhos/P2/Modelo Entidade-Associação (ER).drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/Trabalhos/P2/Modelo Entidade-Associação (ER).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Base de Dados/Trabalhos/P2/Modelo Entidade-Associação (ER).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Empreendorismo/1 Aulas Empreendedorismo versão alargada.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Empreendorismo/18 09 2025 Eng Paulo Bernardo.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Empreendorismo/2  Aulas CEEmpreendedorismo_CRIA.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Empreendorismo/2025_UAlg_Engª Inf._Pitch Template_v1.1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Empreendorismo/21_Enterprenerusship and AI 2023.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Empreendorismo/3. Aula.Empreendedorismo CANVAS.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Empreendorismo/4 Aula.Empreendedorismo.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Empreendorismo/5 AULAS PATENTES e outros DPI.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Empreendorismo/Aula.Empreendedorismo PITCH.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Empreendorismo/Caso de Estudo Empreendedorismo e Inovação.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Empreendorismo/Caso de estudo_AppleWatch_app.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Empreendorismo/In Trott THE ROLE OF THE STATE.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Empreendorismo/LastDance/PITCH.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Empreendorismo/LastDance/PITCH.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Empreendorismo/LastDance/Plano_Estrategico_UniCasa.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Empreendorismo/LastDance/Plano_Estrategico_UniCasa.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Empreendorismo/LastDance/Plano_inicial.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Empreendorismo/LastDance/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Empreendorismo/Recensão Crítica ao Artigo Científico.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Empreendorismo/Recensão Crítica ao Artigo Científico.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Empreendorismo/Silicon Valley Case Study in TROTT P.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Empreendorismo/You Need an Innovation Strategy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Empreendorismo/guia_para_a_protecao_e_transferencia_de_conhecimento_na_universidade_do_algarve.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/1_Fundamentos de Análise de Dados.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/3_Calor Específico e Lei de Boyle-Mariote.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/4_Equivalente Elétrico do Calor.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/5_Campo Magnético no Exterior de Condutores Lineares.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/6_Indução Magnética.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/Calendarização práticas Fisica II 2025-26.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/Lab-2/1 divisão de erro do Picnómetro.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/Lab-2/2425_f1_lab_pl5_2_one.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/Lab-2/2_Expansão Térmica de Líquidos.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/Lab-2/Book 1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/Lab-2/REL_ET_PL1_G5.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/Lab-2/REL_ET_PL1_G5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/Lab-2/Relatorio_Fisica.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/Lab-2/dados_ET_G5_PL1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/Lab-3/3_Calor Específico e Lei de Boyle-Mariote.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/Lab-3/REL_BM_PL1_G5.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/Lab-3/dados_BM_PL1_G5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/Lab-4/4_Equivalente Elétrico do Calor.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/Lab-4/Relatório_Fisica_Pl1 - Prática 4 - (nome_para_ser_alterado)-1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/Lab-4/dados_EEC_PL1_G5(Folha1)(1).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/Lab-4/dados_EEC_PL1_G5(Folha2)(1).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/Lab-4/dados_EEC_PL1_G5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/Lab-4/dados_EEC_PL1_G5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/Lab-5/5_Campo Magnético no Exterior de Condutores Lineares.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/Lab-5/REL_CMECL_PL1_G5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/Lab-5/dados_CMECL_PL1_G5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/Lab-5/novo.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/Lab-6/6_Indução Magnética.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/Lab-6/dados_IM_PL1_G5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/Slides_tratamentos_erros.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/PL/relatorios_estrutura.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/T/Conteúdos programáticos detalhados_2025_26.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/TP/1-Revisões de Matemática.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/TP/2-Exercícios de Termodinâmica.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Fisica 2/TP/3-Exercícios de Eletromagnetismo.pdf" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="3BK5arsZ83TIZ3CnQNV0NDscpAt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.Cliente.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.AutoPilotTests.executor": "Run",
+    "JUnit.CirculoTests.executor": "Run",
+    "JUnit.ClienteTests.executor": "Run",
+    "JUnit.PoligonoTests.executor": "Run",
+    "JUnit.PontoTests.executor": "Run",
+    "JUnit.QuadradoTests.executor": "Run",
+    "JUnit.RetanguloTests.executor": "Run",
+    "JUnit.RouteTests.executor": "Run",
+    "JUnit.SegmentoRetaTests.executor": "Run",
+    "JUnit.TrianguloTests.executor": "Run",
+    "JUnit.VetorTests.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/carva/OneDrive/Documentos/GitHub/T1-UALG/2º ANO/Programação Orientada a Objetos/IdeaProjects/Lab4-J",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "settings.sync",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Cliente">
+    <configuration name="Cliente" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Cliente" />
+      <module name="Lab4-J" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClienteTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab4-J" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ClienteTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PoligonoTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab4-J" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PoligonoTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SegmentoRetaTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab4-J" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SegmentoRetaTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VetorTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab4-J" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="VetorTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Cliente" />
+        <item itemvalue="JUnit.SegmentoRetaTests" />
+        <item itemvalue="JUnit.PoligonoTests" />
+        <item itemvalue="JUnit.ClienteTests" />
+        <item itemvalue="JUnit.VetorTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8cd45cbe-4a0a-492d-84cc-b62180be1755" name="Changes" comment="" />
+      <created>1774224987320</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1774224987320</updated>
+      <workItem from="1774224988362" duration="3000" />
+      <workItem from="1774241003327" duration="7276000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

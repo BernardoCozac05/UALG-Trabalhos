@@ -1,0 +1,22 @@
+The Crown of Eternity
+[0]
+You stand at the edge of the Dark Forest, seeking the Crown of Eternity.
++ 1. Enter the forest
++ 2. Follow the river
+Select your option: [2]
+You follow the river as it winds deeper into the kingdom.
++ 9. Build a raft
++ 10. Cross a bridge ahead
+Select your option: [10]
+You find a bridge guarded by a troll demanding passage.
++ 12. Pay with gold
++ 13. Fight the troll
+Select your option: Error: invalid file or error opening file!
+Select your option: Story state saved successfully.
+Select your option: [10]
+You find a bridge guarded by a troll demanding passage.
++ 12. Pay with gold
++ 13. Fight the troll
+Select your option: [13]
+The troll strikes you down. Your quest ends here.
+<FAILED>
